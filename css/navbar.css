@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure consistent box-sizing */
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Stops side scrolling */
 }
 
-.nav-cont{
+.nav-cont {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -17,66 +18,66 @@ body{
     height: 100px;
 }
 
-.WMSU-Logo-cont{
+.WMSU-Logo-cont {
     display: flex;
     align-items: center;
     height: 100px;
     margin-left: 35px;
 }
 
-.WMSU-Logo{
+.WMSU-Logo {
     height: 60px;
     width: 60px;
 }
 
-.logo-text{
+.logo-text {
     display: flex;
     align-items: center;
     margin-left: 15px;
 }
 
-.nav-logo-line{
+.nav-logo-line {
     height: 50px;
     width: 1px;
     border: 1px solid #BD0F03;
 }
 
-.nav-title-cont{
+.nav-title-cont {
     display: flex;
     flex-direction: column;
     color: #BD0F03;
     margin-left: 10px;
 }
 
-.nav-logo-title{
+.nav-logo-title {
     font-size: 14px;
     margin-top: -5px;
 }
 
-.nav-logo-subtitle{
+.nav-logo-subtitle {
     font-size: 10px;
     margin-top: -5px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     margin-left: 125px;
     margin-right: 35px;
 }
 
-.nav-links>a{
+.nav-links > a {
     text-decoration: none;
     color: #BD0F03;
     font-size: 12px;
     margin-right: 25px;
 }
 
-.nav-links>a img{
+.nav-links > a img {
     margin-top: -3px;
 }
 
-.nav-links>a:hover{
+.nav-links > a:hover {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -84,20 +85,21 @@ body{
     text-decoration: underline;
     transition: ease-in-out .2s;
 }
-.nav-links>a:not(:hover){
+
+.nav-links > a:not(:hover) {
     transition: ease-out .2s;
 }
 
-.nav-links>a:hover img{
+.nav-links > a:hover img {
     transform: scaleY(-1);
     transition: ease-in-out .2s;
 }
 
-.nav-links>a:not(:hover) img{
+.nav-links > a:not(:hover) img {
     transition: ease-out .2s;
 }
 
-.MyWmsu-link{
+.MyWmsu-link {
     text-decoration: none;
     color: white;
     border: 1px solid #BD0F03;
@@ -107,17 +109,17 @@ body{
     padding: 8px 25px;
 }
 
-.MyWmsu-link:hover{
+.MyWmsu-link:hover {
     background-color: white;
     color: #BD0F03;
     transition: ease-in-out .2s;
 }
 
-.MyWmsu-link:not(:hover){
+.MyWmsu-link:not(:hover) {
     transition: ease-out .2s;
 }
 
-.nav-dropdown{
+.nav-dropdown {
     visibility: hidden;
     position: absolute;
     top: 100px; /* Aligns below navbar */
@@ -145,46 +147,46 @@ body{
     z-index: 1;
 }
 
-.nav-links>#About:hover ~ #About-dropdown,
+.nav-links > #About:hover ~ #About-dropdown,
 #About-dropdown:hover {
     visibility: visible;
     opacity: .75;
     transform: translateY(0);
 }
 
-.nav-links>#Admissions:hover ~ #Admissions-dropdown,
+.nav-links > #Admissions:hover ~ #Admissions-dropdown,
 #Admissions-dropdown:hover {
     visibility: visible;
     opacity: .75;
     transform: translateY(0);
 }
 
-.nav-links>#Academic:hover ~ #Academic-dropdown,
+.nav-links > #Academic:hover ~ #Academic-dropdown,
 #Academic-dropdown:hover {
     visibility: visible;
     opacity: .75;
     transform: translateY(0);
 }
 
-.nav-links>#Research:hover ~ #Research-dropdown,
+.nav-links > #Research:hover ~ #Research-dropdown,
 #Research-dropdown:hover {
     visibility: visible;
     opacity: .75;
     transform: translateY(0);
 }
 
-.nav-links>#Other-Links:hover ~ #Other-dropdown,
+.nav-links > #Other-Links:hover ~ #Other-dropdown,
 #Other-dropdown:hover {
     visibility: visible;
     opacity: .75;
     transform: translateY(0);
 }
 
-.dropdown-cont{
+.dropdown-cont {
     margin-top: 15px;
 }
 
-.dropdown-title{
+.dropdown-title {
     color: #BD0F03;
     width: 100%;
     height: 100%;
@@ -195,26 +197,45 @@ body{
     align-content: center;
 }
 
-.dropdown-content{
+.dropdown-content {
     margin: 0 100px;
 }
 
-.dropdown-content h6{
+.dropdown-content h6 {
     color: #7C0A02;
     font-size: 17px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-.dropdown-content p{
+.dropdown-content p {
     color: #BD0F03;
     font-size: 12px;
     margin-top: -10px;
 }
 
-.nav-divider{
+.dropdown-content h2 {
+    color: #BD0F03;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content h5 {
+    color: #BD0F03;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.nav-divider {
     width: .5px;
     height: 300px;
     background-color: black;
     margin: -80px -20px;
+}
+
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
