@@ -60,3 +60,78 @@
         </div>
     </div>
 </section>
+
+<section class="about-wmsu">
+    <div class="about-overlay">
+        <div class="about-content">
+            <div class="section-header d-flex justify-content-between align-items-center">
+                <h2>ABOUT WMSU</h2>
+                <a href="#" class="learn-more">LEARN MORE +</a>
+            </div>
+            
+            <div class="about-description">
+                <p>Learn how WMSU shapes future leaders, explore our rich history, and become part of a vibrant academic community.</p>
+            </div>
+            
+            <div class="about-links">
+                <a href="#" class="about-link">History of WMSU <span class="arrow">></span></a>
+                <a href="#" class="about-link">Leadership and Governance <span class="arrow">></span></a>
+                <a href="#" class="about-link">Mission and Vision <span class="arrow">></span></a>
+                <a href="#" class="about-link">WMSU in the Community <span class="arrow">></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="presidents-corner">
+    <div class="corner-container">
+        <div class="corner-image">
+            <img src="../imgs/OCHO.png" alt="WMSU President" class="img-fluid">
+        </div>
+        <div class="corner-content">
+            <h2 class="section-title">PRESIDENT'S CORNER</h2>
+            
+            <div class="report-links">
+                <a href="#" class="report-item">
+                    <div class="report-info">
+                        <h3>President's Report 1st Quarter 2024</h3>
+                        <span class="report-date">April 11, 2024</span>
+                    </div>
+                    <span class="arrow">></span>
+                </a>
+
+                <a href="#" class="report-item">
+                    <div class="report-info">
+                        <h3>President's Report 1st Quarter 2023</h3>
+                        <span class="report-date">April 11, 2024</span>
+                    </div>
+                    <span class="arrow">></span>
+                </a>
+
+                <a href="#" class="report-item">
+                    <div class="report-info">
+                        <h3>President's Final Report</h3>
+                        <span class="report-date">April 11, 2024</span>
+                    </div>
+                    <span class="arrow">></span>
+                </a>
+
+                <a href="#" class="report-item">
+                    <div class="report-info">
+                        <h3>President's Report 4th Quarter</h3>
+                        <span class="report-date">April 11, 2024</span>
+                    </div>
+                    <span class="arrow">></span>
+                </a>
+
+                <a href="#" class="report-item">
+                    <div class="report-info">
+                        <h3>President's Report Year 2</h3>
+                        <span class="report-date">April 11, 2024</span>
+                    </div>
+                    <span class="arrow">></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
