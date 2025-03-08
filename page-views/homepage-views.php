@@ -5,6 +5,7 @@
 <section class="line-after-hero"></section>
 
 <section class="wmsu-news">
+    <section class="wmsu-news">
     <div class="section-header">
         <h2 class="footer-Title inter-extrabold">WMSU NEWS</h2>
     </div>
@@ -173,3 +174,4 @@
 </section>
 
 <section class="line-page-div"></section>
+</section>
