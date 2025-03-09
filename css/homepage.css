@@ -60,17 +60,18 @@
     padding: 2rem;
 }
 
-.wmsu-news{
-    padding: 2rem;
+.wmsu-news {
+    padding: 1rem;
     justify-content: center;
     text-align: center;
 }
+
 
 .more {
     text-align: right;
     margin-right: 80px; 
     margin-top: 20px; 
-    padding-bottom: 20px;
+    padding-bottom: 10px 0;
 }
 
 .news-grid {
@@ -78,17 +79,19 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin: 0 40px;
-    padding: 20px 0;
+    padding: 5px 0 10px; 
 }
 
 .news-title {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.54994rem;
     color: #8B0000;
     margin: 0;
-    padding-top: 40px; 
+    padding-top: 20px; 
+    line-height: normal;
 }
+
 #more-article {
     display: inline-flex;
     align-items: center;
@@ -177,7 +180,7 @@
 
 .research-title {
     color: #8B0000;
-    font-size: 2.5rem;
+    font-size: 3.54994rem;
     font-weight: 800;
     margin: 0;
     text-align: center;
@@ -403,7 +406,7 @@
 }
 .section-title {
     color: #8B0000;
-    font-size: 2.5rem;
+    font-size: 3.54994rem;
     font-weight: bold;
     margin-bottom: 1.5rem; 
 }
