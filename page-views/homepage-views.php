@@ -39,6 +39,7 @@
             <a href="#" class="read-more">Read More ></a>
         </div>
     </div>
+    </section>
 </section>
 
 <section class="line-page-div"></section>
@@ -174,4 +175,70 @@
 </section>
 
 <section class="line-page-div"></section>
+
+<section class="wmsu-services">
+    <div class="main-page-titles">SERVICES</div>
+    <div class="services-cont">
+        <div class="services-squares">
+            <div class="square-cont">
+                <div class="square-raindrop">
+                    <div class="square-outer"></div>
+                    <div class="square-inner"></div>
+                    <div class="square-icon">
+                        <img src="../imgs/Freshman-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="square-text">Freshman Online Pre-Admission</div>
+            </div>
+        </div>
+        <div class="services-squares">
+            <div class="square-cont">
+                <div class="square-raindrop">
+                    <div class="square-outer"></div>
+                    <div class="square-inner"></div>
+                    <div class="square-icon">
+                        <img src="../imgs/Old Student-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="square-text">Online Registration (Old Student)</div>
+            </div>
+        </div>
+        <div class="services-squares">
+            <div class="square-cont">
+                <div class="square-raindrop">
+                    <div class="square-outer"></div>
+                    <div class="square-inner"></div>
+                    <div class="square-icon">
+                        <img src="../imgs/Advising-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="square-text">Online Advising</div>
+            </div>
+        </div>
+        <div class="services-squares">
+            <div class="square-cont">
+                <div class="square-raindrop">
+                    <div class="square-outer"></div>
+                    <div class="square-inner"></div>
+                    <div class="square-icon">
+                        <img src="../imgs/Enlistment-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="square-text">Online Enlistment</div>
+            </div>
+        </div>
+        <div class="services-rectangle">
+            <div class="rectangle-text">
+                <div class="rectangle-text-hide">WMSU<br>SERVICES</div>
+                <div class="rectangle-plus">+</div>
+                <div class="rectangle-more">MORE</div> 
+            </div>
+        </div> 
+    </div>
 </section>
+
+<section class="line-page-div"></section>
+
+
+
+
