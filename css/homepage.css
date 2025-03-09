@@ -94,7 +94,8 @@
     align-items: center;
     color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bolder;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -186,8 +187,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: bolder;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
