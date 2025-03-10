@@ -5,13 +5,13 @@
 <section class="line-after-hero"></section>
 
 <section class="wmsu-news">
-    <section class="wmsu-news">
-    <div class="section-header">
-        <h2 class="footer-Title inter-extrabold">WMSU NEWS</h2>
+    <div class="news-header-container">
+        <h2 class="news-title">WMSU NEWS</h2>
+        <div class="more">
+            <h6 class="inter-extrabold" id="more-article">MORE ARTICLES</h6>
+        </div>
     </div>
-    <div class="more">
-        <h6 class="inter-extrabold" id="more-article">More Articles +</h6>
-    </div>
+</section>
     <div class="news-grid">
         <div class="news-item">
             <img src="../imgs/TOP 1 WMSU.jpg" alt="WMSU-Rankings">
@@ -39,25 +39,26 @@
             <a href="#" class="read-more">Read More ></a>
         </div>
     </div>
-    </section>
 </section>
+
 
 <section class="line-page-div"></section>
 
 <section class="research-archives">
-    <div class="section-header d-flex justify-content-between align-items-center">
-        <h2 class="section-title">RESEARCH ARCHIVES</h2>
-        <a href="#" class="learn-more">LEARN MORE +</a>
+    <div class="research-header">
+        <h2 class="research-title">RESEARCH ARCHIVES</h2>
+        <div class="learn-more-container">
+            <span>LEARN MORE</span>
+            <span class="plus">+</span>
+        </div>
     </div>
     
-    <div class="research-item">
-        <div class="research-content">
-            <h3 class="research-title">Zamcelco and NGCP Scheduled Power Interruption in East Coast, affecting WMSU</h3>
-            <p class="source">Zamcelco Inc.</p>
-            <p class="research-description">
-            In response to the scheduled power interruption by NGCP and Zamcelco in the West Coast area, including WMSU, on Saturday, March 8, 2025, all undergraduate and graduate classes will be conducted online
-            </p>
-            <div class="research-meta">
+    <div class="research-content">
+        <div class="research-text">
+            <h1 class="article-title">Zamcelco and NGCP Scheduled Power Interruption in East Coast, affecting WMSU</h1>
+            <p class="research">Zamcelco Inc.</p>
+            <p class="description">In response to the scheduled power interruption by NGCP and Zamcelco in the West Coast area, including WMSU, on Saturday, March 8, 2025, all undergraduate and graduate classes will be conducted online</p>
+            <div class="article-meta">
                 <span class="publish-date">Published: March 7, 2025</span>
                 <a href="#" class="read-more">Read More ></a>
             </div>
@@ -71,11 +72,12 @@
 <section class="line-page-div"></section>
 
 <section class="about-wmsu">
+    <div class="background-image"></div>
     <div class="about-overlay">
         <div class="about-content">
             <div class="section-header d-flex justify-content-between align-items-center">
                 <h2>ABOUT WMSU</h2>
-                <a href="#" class="learn-more">LEARN MORE +</a>
+                <a href="#" class="learn-more">LEARN MORE</a>
             </div>
             
             <div class="about-description">
@@ -83,10 +85,23 @@
             </div>
             
             <div class="about-links">
-                <a href="#" class="about-link">History of WMSU <span class="arrow">></span></a>
-                <a href="#" class="about-link">Leadership and Governance <span class="arrow">></span></a>
-                <a href="#" class="about-link">Mission and Vision <span class="arrow">></span></a>
-                <a href="#" class="about-link">WMSU in the Community <span class="arrow">></span></a>
+    <div class="link-row">
+        <span>History of WMSU</span>
+        <span class="arrow">></span>
+    </div>
+    <div class="link-row">
+        <span>Leadership and Governance</span>
+        <span class="arrow">></span>
+    </div>
+    <div class="link-row">
+        <span>Mission and Vision</span>
+        <span class="arrow">></span>
+    </div>
+    <div class="link-row">
+        <span>WMSU in the Community</span>
+        <span class="arrow">></span>
+    </div>
+</div>
             </div>
         </div>
     </div>
@@ -148,6 +163,8 @@
 </section>
 
 <section class="line-page-div"></section>
+</section>
+
 
 <section class="wmsu-campuses">
     <div class="main-page-titles">WMSU CAMPUSES</div>
