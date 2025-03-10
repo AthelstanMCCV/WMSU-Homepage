@@ -88,7 +88,7 @@
     font-size: 3.54994rem;
     color: #8B0000;
     margin: 0;
-    padding-top: 20px; 
+    padding-top: 20px;
     line-height: normal;
 }
 
@@ -380,7 +380,7 @@
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 .presidents-corner {
-    padding: 4rem 0; 
+    padding: 4rem 0;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -390,27 +390,16 @@
 }
 
 .corner-container {
-    width: 100%; 
-    max-width: 1800px; 
+    width: 100%;
+    max-width: 1800px;
     margin: 0 auto;
     display: grid;
-    border-radius: 80px;
-    grid-template-columns: 1.2fr 1.7fr;
+    grid-template-columns: 1.2fr 1.7fr; /* Split into two columns */
     gap: 4rem;
     padding: 3rem 5rem;
 }
-.corner-content {
-    position: relative;
-    margin-right: 70px;
-    left: 90px; 
-}
-.section-title {
-    color: #8B0000;
-    font-size: 3.54994rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem; 
-}
 
+/* Left side - Image */
 .corner-image {
     width: 600px;
     height: auto;
@@ -419,19 +408,6 @@
     border-radius: 0 0 100px 0;
 }
 
-
-.corner-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px; 
-    border-radius: 0 100px 0 0;
-    transform: translateY(50%); 
-}
-
-
 .corner-image img {
     width: 100%;
     height: 100%;
@@ -439,15 +415,25 @@
     display: block;
 }
 
-
-.corner-image {
-    clip-path: path('M0,0 L100%,0 L100%,calc(100% - 40px) Q100%,100% calc(100% - 40px),100% L0,100% Z');
+/* Right side - Content */
+.corner-content {
+    position: relative;
+    margin-right: 70px;
+    left: 90px;
 }
 
+.section-title {
+    color: #8B0000;
+    font-size: 3.54994rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Report links styling */
 .report-links {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; 
+    gap: 0.5rem;
 }
 
 .report-item {
@@ -461,17 +447,43 @@
     position: relative;
 }
 
-.report-info {
-    flex-grow: 1;
-    padding-right: 3rem; 
+.report-info h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.2;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;  
+    padding-bottom: 2px;
 }
 
+.report-info h3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;  
+    background-color: #8B0000;
+    transition: left 0.3s ease;
+}
 
+.report-item:hover .report-info h3::before {
+    left: 0; 
+}
+
+.report-date {
+    font-size: 0.9rem;
+    color: #666;
+    display: block; 
+    margin-top: 0.25rem; 
+}
 .report-item::after {
     content: ">";
     position: absolute;
     right: 2rem;
-    color: #8B0000;  /* WMSU red */
+    color: #8B0000;
     font-size: 1.2rem;
     font-weight: bold;
     opacity: 0.7;
@@ -487,38 +499,14 @@
 .report-item:hover {
     background-color: rgba(139, 0, 0, 0.03);
 }
-.report-info h3 {
-    color: #333;
-    font-size: 1.1rem;
-    margin: 0 0 0.25rem 0;
-    line-height: 1.2;
-    transition: all 0.3s ease; 
-}
-
-.report-date {
-    font-size: 0.9rem;
-    color: #666;
-    display: block;
-    margin-top: 0.1rem;
-    transition: all 0.3s ease; 
-}
-
-.arrow {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease; 
-}
-
 
 .report-item:hover .report-info {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .report-item:hover h3 {
-    color: #8B0000; 
+    color: #8B0000;
 }
-
 .report-item:hover .arrow {
     transform: translateX(5px); /
 }
