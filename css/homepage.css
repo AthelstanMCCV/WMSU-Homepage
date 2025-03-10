@@ -639,3 +639,13 @@
     transform: translateY(-50%);
 }
 
+.follow-cont {
+    justify-content: space-between;
+}
+
+.follow-cont-left {
+    width: 49.875rem;
+    height: 28.625rem;
+    flex-shrink: 0;
+    fill: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}

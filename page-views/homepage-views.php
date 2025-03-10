@@ -239,6 +239,26 @@
 
 <section class="line-page-div"></section>
 
+<section class="follow-wmsu">
+    <div class="main-page-titles">FOLLOW WMSU</div>
+    <div class="follow-cont">
+        <div class="follow-cont-left">
+            <div class="follow-left-rect"></div>
+            <div class="follow-left-text">
+                <div class="left-text-icon"></div>
+                <div class="left-text-word"></div>
+            </div>
+        </div>
+        <div class="follow-cont-right">
+            <div class="follow-right-rect"></div>
+            <div class="follow-right-text">
+                <div class="right-text-icon"></div>
+                <div class="right-text-word"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
