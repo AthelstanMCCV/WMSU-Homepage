@@ -260,17 +260,27 @@
     <div class="main-page-titles">FOLLOW WMSU</div>
     <div class="follow-cont">
         <div class="follow-cont-left">
-            <div class="follow-left-rect"></div>
-            <div class="follow-left-text">
-                <div class="left-text-icon"></div>
-                <div class="left-text-word"></div>
+            <div class="follow-left-rect">
+                <div class="left-red-overlay"></div>
+                <img src="../imgs/facebook.jpg" alt="" class="follow-left-pic">
+                <div class="follow-left-text">
+                    <div class="left-text-icon">
+                        <img src="../imgs/facebook-icon.png" alt="" >
+                    </div>
+                    <div class="left-text-word">FACEBOOK</div>
+                    </div>
+                </div>
             </div>
-        </div>
         <div class="follow-cont-right">
-            <div class="follow-right-rect"></div>
-            <div class="follow-right-text">
-                <div class="right-text-icon"></div>
-                <div class="right-text-word"></div>
+            <div class="follow-right-rect">
+                <div class="right-red-overlay"></div>
+                <img src="../imgs/youtube.jpg" alt="" class="follow-right-pic">
+                <div class="follow-right-text">
+                    <div class="right-text-word">YOUTUBE</div>
+                    <div class="right-text-icon">
+                        <img src="../imgs/youtube-icon.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
