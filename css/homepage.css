@@ -168,217 +168,203 @@
 .research-archives {
     padding: 40px 80px;
     margin: 0 auto;
+    max-width: 1800px;
 }
 
 .research-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
-    position: relative;
 }
 
 .research-title {
     color: #8B0000;
+    font-family: 'Inter', sans-serif;
     font-size: 3.54994rem;
     font-weight: 800;
-    margin: 0;
-    text-align: center;
+    margin-bottom: 40px;
 }
 
-.learn-more-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-weight: bolder;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.learn-more-container span {
-    display: inline-block;
-}
-
-.plus {
-    margin-left: 4px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Hover effects */
-.learn-more-container:hover {
-    transform: scale(1.08);
-    color: black;
-}
-
-.learn-more-container:hover .plus {
-    transform: rotate(45deg);
-}
 .research-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     align-items: start;
 }
 
+.research-text {
+    padding-right: 40px;
+}
+
 .article-title {
     color: #8B0000;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
     line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .researcher {
-    color: black;
-    font-size: 1rem;
+    color: #333;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
 .description {
-    color: black;
+    color: #333;
+    font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
 .article-meta {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 30px;
 }
 
 .publish-date {
-    color: black;
+    color: #333;
+    font-size: 1rem;
 }
 
 .read-more {
     color: #8B0000;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    overflow: hidden;
+    width: fit-content; 
+}
+
+.read-more::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    background-color: #8B0000;
+    transition: left 0.3s ease;
+}
+
+.read-more:hover::before {
+    left: 0;
+}
+
+.research-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .research-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    flex: absolute;
 }
-.about-wmsu {
+.about-section {
     position: relative;
     width: 100%;
-    min-height: 500px;
-    background-image: url('../imgs/Admin.jpg'); 
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(139, 0, 0, 0.85), rgba(139, 0, 0, 0.85)), url('../imgs/Admin.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
 }
 
-.about-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.about-container {
     width: 100%;
-    height: 100%;
-    background-color: rgba(139, 0, 0, 0.85); 
-    padding: 4rem 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 5rem;
 }
+
+
+.vertical-divider {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: #FFFFFF;
+    transform: translateX(-50%);
+}
+
 
 .about-content {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    z-index: 2;
+    width: 50%;
+    padding-left: 4rem;
+    color: #FFFFFF;
 }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.about-title {
+    color: #FFFFFF;
+    font-size: 3.54994rem;
+    font-weight: 800;
     margin-bottom: 2rem;
 }
 
-.section-header h2 {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.learn-more {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.learn-more:hover {
-    transform: scale(1.08);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-
-.learn-more::after {
-    content: "+";
-    display: inline-block;
-    margin-left: 4px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.learn-more:hover::after {
-    transform: rotate(45deg);
-}
-
-.about-description p {
-    color: white;
-    font-size: 1.1rem;
-    line-height: 1.2;
-    font-weight: lighter;
-}
-
-.about-link {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-
-.about-link:hover {
-    opacity: 0.8;
+.about-description {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
 }
 .about-links {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
+    gap: 1.5rem;
 }
 
-.link-row {
+.about-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    cursor: pointer;
-    padding: 5px 0;
-}
-
-.link-row span {
+    color: #FFFFFF;
+    text-decoration: none;
     font-size: 1.1rem;
+    padding: 0.5rem 0;
 }
 
-.arrow {
-    margin-left: 20px;
+
+.about-link span:first-child {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    overflow: hidden;
 }
 
-.link-row:hover span:first-child {
-    transform: scale(1.08);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+.about-link span:first-child::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    background-color: #FFFFFF;
+    transition: left 0.3s ease;
 }
 
-.link-row:hover .arrow {
-    transform: translateX(8px) scale(1.08);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+.about-link:hover span:first-child::before {
+    left: 0;
 }
+
+
+.about-link:hover .arrow {
+    transform: translateX(5px);
+}
+
 .presidents-corner {
     padding: 4rem 0;
     background: #fff;

@@ -47,61 +47,58 @@
 <section class="research-archives">
     <div class="research-header">
         <h2 class="research-title">RESEARCH ARCHIVES</h2>
-        <div class="learn-more-container">
-            <span>LEARN MORE</span>
-            <span class="plus">+</span>
-        </div>
     </div>
     
     <div class="research-content">
         <div class="research-text">
-            <h1 class="article-title">Zamcelco and NGCP Scheduled Power Interruption in East Coast, affecting WMSU</h1>
-            <p class="research">Zamcelco Inc.</p>
-            <p class="description">In response to the scheduled power interruption by NGCP and Zamcelco in the West Coast area, including WMSU, on Saturday, March 8, 2025, all undergraduate and graduate classes will be conducted online</p>
+            <h3 class="article-title">Artificial Intelligence in Education: Improving Learning Through Smart Tutoring Systems</h3>
+            
+            <p class="researcher">Lead Researcher: Engr. John Dela Cruz, College of Computing Studies</p>
+            
+            <p class="description">As artificial intelligence (AI) continues to reshape various industries, its role in education has become increasingly significant. This study explores the implementation of AI-powered Smart Tutoring Systems (STS) to enhance student learning experiences. By leveraging machine learning algorithms, natural language processing, and adaptive learning models, these systems provide personalized guidance tailored to each student's learning pace and comprehension level.</p>
+            
             <div class="article-meta">
-                <span class="publish-date">Published: March 7, 2025</span>
+                <span class="publish-date">Published: December 2023</span>
                 <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
+        
         <div class="research-image">
-            <img src="../imgs/Advisory.jpg" alt="Advisory" class="img-fluid">
+            <img src="../imgs/research.jpg" alt="Research Image">
         </div>
     </div>
 </section>
 
 <section class="line-page-div"></section>
 
-<section class="about-wmsu">
-    <div class="background-image"></div>
-    <div class="about-overlay">
+<section class="about-section">
+    <div class="about-container">
+        <div class="vertical-divider"></div>
+        
         <div class="about-content">
-            <div class="section-header d-flex justify-content-between align-items-center">
-                <h2>ABOUT WMSU</h2>
-                <a href="#" class="learn-more">LEARN MORE</a>
-            </div>
+            <h1 class="about-title">ABOUT WMSU</h1>
             
-            <div class="about-description">
-                <p>Learn how WMSU shapes future leaders, explore our rich history, and become part of a vibrant academic community.</p>
-            </div>
+            <p class="about-description inter-extralight">
+                Learn how WMSU shapes future leaders, explore our rich history, and become part of a vibrant academic community.
+            </p>
             
             <div class="about-links">
-    <div class="link-row">
-        <span>History of WMSU</span>
-        <span class="arrow">></span>
-    </div>
-    <div class="link-row">
-        <span>Leadership and Governance</span>
-        <span class="arrow">></span>
-    </div>
-    <div class="link-row">
-        <span>Mission and Vision</span>
-        <span class="arrow">></span>
-    </div>
-    <div class="link-row">
-        <span>WMSU in the Community</span>
-        <span class="arrow">></span>
-    </div>
-</div>
+                <a href="#" class="about-link inter-semibold">
+                    <span>History of WMSU</span>
+                    <span class="arrow">></span>
+                </a>
+                <a href="#" class="about-link inter-semibold">
+                    <span>Leadership and Governance</span>
+                    <span class="arrow">></span>
+                </a>
+                <a href="#" class="about-link inter-semibold">
+                    <span>Mission and Vision</span>
+                    <span class="arrow">></span>
+                </a>
+                <a href="#" class="about-link inter-semibold">
+                    <span>WMSU in the Community</span>
+                    <span class="arrow">></span>
+                </a>
             </div>
         </div>
     </div>
