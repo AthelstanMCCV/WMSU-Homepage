@@ -14,28 +14,27 @@
 </section>
     <div class="news-grid">
         <div class="news-item">
-            <img src="../imgs/TOP 1 WMSU.jpg" alt="WMSU-Rankings">
-            <h6>WMSU Ranks Among Top Universities in the Philippines</h6>
-            <p>Western Mindanao State University (WMSU) has been recognized as one of the top universities in the Philippines, marking a milestone in academic quality education, research, and community development.</p>
+            <img src="../imgs/news1.jpg" alt="WMSU-Rankings">
+            <h6 class = "inter-medium">WMSU Ranks Among Top Universities in the Philippines</h6>
+            <p class = "inter-light">Western Mindanao State University (WMSU) has been recognized as one of the top universities in the country, highlighting its commitment to quality education, research, and community development.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/Admin.jpg" alt="Smart Research Hub">
-            <h6>New Smart Research Hub for Students and Faculty</h6>
-            <p>WMSU leads its state-of-the-art Smart Research Hub, providing students and faculty with advanced facilities to support academic research, innovation, and collaboration.</p>
+            <img src="../imgs/news2.jpg" alt="Smart Research Hub">
+            <h6 class = "inter-medium">New Smart Research Hub for Students and Faculty</h6>
+            <p class = "inter-light">WMSU leads its state-of-the-art Smart Research Hub, providing students and faculty with advanced facilities to support academic research, innovation, and collaboration.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/TOP 2.jpg" alt="CCJE">
-            <h6>Top 2 Performing School in the February 2025 Criminology Licensure Examination with 101 to 199 examinees</h6>
-            <p>We proudly celebrate your recognition as a 𝐓𝐨𝐩 𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐢𝐧𝐠 𝐒𝐜𝐡𝐨𝐨𝐥 𝐢𝐧 𝐭𝐡𝐞 𝐅𝐞𝐛𝐫𝐮𝐚𝐫𝐲 𝟐𝟎𝟐𝟓 𝐂𝐫𝐢𝐦𝐢𝐧𝐨𝐥𝐨𝐠𝐲 𝐋𝐢𝐜𝐞𝐧𝐬𝐮𝐫𝐞 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧, 𝐫𝐚𝐧𝐤𝐢𝐧𝐠 𝐓𝐨𝐩 𝟐 with 101 to 199 examinees with an impressive 𝟗𝟐.𝟗𝟐% 𝐩𝐚𝐬𝐬𝐢𝐧𝐠 𝐫𝐚𝐭𝐞! This achievement reflects your unwavering commitment to academic excellence and professional success.
-            Your hard work, dedication, and perseverance inspire the entire WMSU community. We salute your outstanding performance and look forward to even greater milestones ahead</p>
+            <img src="../imgs/news3.jpg" alt="Global-Partnerships">
+            <h6 class = "inter-medium">WMSU Strengthens Global Partnerships for Academic Excellence</h6>
+            <p class = "inter-light">The university has signed new agreements with international institutions to expand exchange programs, research collaborations, and scholarship opportunities for students.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/Office.jpg" alt="Office">
-            <h6>Looks of the Office of the President</h6>
-            <p>The looks of the Office of the President of Western Mindanao State University.</p>
+            <img src="../imgs/news4.jpg" alt="Science Fair">
+            <h6 class = "inter-medium">Students Win Big at National Science and Technology Fair</h6>
+            <p class = "inter-light">A team of WMSU students has brought home top honors from the National Science and Technology Fair, showcasing groundbreaking projects in sustainability and digital innovation.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
     </div>
@@ -71,17 +70,16 @@
 
 <section class="line-page-div"></section>
 
-<section class="about-section">
+       <div class="about-page-title">
+    <h1>ABOUT WMSU</h1>
+       </div>
+       <section class="about-section">
     <div class="about-container">
         <div class="vertical-divider"></div>
-        
         <div class="about-content">
-            <h1 class="about-title">ABOUT WMSU</h1>
-            
             <p class="about-description inter-extralight">
                 Learn how WMSU shapes future leaders, explore our rich history, and become part of a vibrant academic community.
             </p>
-            
             <div class="about-links">
                 <a href="#" class="about-link inter-semibold">
                     <span>History of WMSU</span>
