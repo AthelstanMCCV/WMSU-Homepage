@@ -74,9 +74,13 @@
 
 <section class="line-page-div"></section>
 
-       <div class="about-page-title">
+<div class="about-page-title">
     <h1>ABOUT WMSU</h1>
-       </div>
+    <a href="#" class="about-learn-more">
+        <span class="about-learn-more-text">Learn more</span>
+        <span class="about-learn-more-plus inter-semibold">+</span>
+    </a>
+</div>
        <section class="about-section">
     <div class="about-container">
         <div class="vertical-divider"></div>
