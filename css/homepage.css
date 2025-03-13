@@ -361,7 +361,7 @@
 .about-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: linear-gradient(0deg, rgba(139, 0, 0, 0.85), rgba(139, 0, 0, 0.85)), url('../imgs/news2.jpg');
     background-size: cover;
     background-position: center;
