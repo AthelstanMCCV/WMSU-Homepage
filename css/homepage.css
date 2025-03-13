@@ -383,6 +383,7 @@
     position: absolute;
     left: 50%;
     height: 110%;
+    bottom: 0.2vh;
     width: 2px;
     background-color: #FFFFFF;
     transform: translateX(-25%);
