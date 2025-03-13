@@ -44,6 +44,10 @@
 <section class="line-page-div"></section>
 
 <section class="research-archives">
+    <a href="#" class="learn-more-top">
+        <span class="learn-more-text">LEARN MORE</span>
+        <span class="learn-more-plus inter-extrabold">+</span>
+    </a>
     <div class="research-header">
         <h2 class="research-title">RESEARCH ARCHIVES</h2>
     </div>
@@ -118,7 +122,6 @@
                         <h3>President's Report 1st Quarter 2024</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
-                    <span class="arrow">></span>
                 </a>
 
                 <a href="#" class="report-item">
@@ -126,7 +129,6 @@
                         <h3>President's Report 1st Quarter 2023</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
-                    <span class="arrow">></span>
                 </a>
 
                 <a href="#" class="report-item">
@@ -134,7 +136,6 @@
                         <h3>President's Final Report</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
-                    <span class="arrow">></span>
                 </a>
 
                 <a href="#" class="report-item">
@@ -142,7 +143,6 @@
                         <h3>President's Report 4th Quarter</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
-                    <span class="arrow">></span>
                 </a>
 
                 <a href="#" class="report-item">
@@ -150,7 +150,6 @@
                         <h3>President's Report Year 2</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
-                    <span class="arrow">></span>
                 </a>
             </div>
         </div>
