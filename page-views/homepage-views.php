@@ -123,35 +123,35 @@
             <div class="report-links">
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3>President's Report 1st Quarter 2024</h3>
+                        <h3 class ="inter-bold">President's Report 1st Quarter 2024</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
                 </a>
 
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3>President's Report 1st Quarter 2023</h3>
+                        <h3 class ="inter-bold">President's Report 1st Quarter 2023</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
                 </a>
 
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3>President's Final Report</h3>
+                        <h3 class ="inter-bold">President's Final Report</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
                 </a>
 
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3>President's Report 4th Quarter</h3>
+                        <h3 class ="inter-bold">President's Report 4th Quarter</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
                 </a>
 
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3>President's Report Year 2</h3>
+                        <h3 class ="inter-bold">President's Report Year 2</h3>
                         <span class="report-date">April 11, 2024</span>
                     </div>
                 </a>
