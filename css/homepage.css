@@ -70,8 +70,7 @@
 .more {
     text-align: right;
     margin-right: 80px; 
-    margin-top: 20px; 
-    padding-bottom: 10px 0;
+    margin-top: 5px 2px 0 0;
 }
 
 .news-grid {
@@ -100,12 +99,12 @@
     font-weight: bolder;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease; /* Made transition smoother */
+    transition: all 0.3s ease;
     position: relative;
-    padding-bottom: 2px;
+    padding-bottom: 2px 0;
 }
 
-/* Add underline effect */
+
 #more-article::before {
     content: '';
     position: absolute;
