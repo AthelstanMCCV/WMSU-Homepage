@@ -45,7 +45,7 @@
 
 <section class="research-archives">
     <a href="#" class="learn-more-top">
-        <span class="learn-more-text">LEARN MORE</span>
+        <span class="learn-more-text inter-extrabold">LEARN MORE</span>
         <span class="learn-more-plus inter-extrabold">+</span>
     </a>
     <div class="research-header">
@@ -67,7 +67,7 @@
         </div>
         
         <div class="research-image">
-            <img src="../imgs/research.jpg" alt="Research Image">
+            <img src="../imgs/research.png" alt="Research Image">
         </div>
     </div>
 </section>
@@ -77,7 +77,7 @@
 <div class="about-page-title">
     <h1>ABOUT WMSU</h1>
     <a href="#" class="about-learn-more">
-        <span class="about-learn-more-text">Learn more</span>
+        <span class="about-learn-more-text inter-extrabold">Learn more</span>
         <span class="about-learn-more-plus inter-semibold">+</span>
     </a>
 </div>

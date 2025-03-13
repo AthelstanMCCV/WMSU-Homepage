@@ -100,30 +100,49 @@
     font-weight: bolder;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease; /* Made transition smoother */
+    position: relative;
+    padding-bottom: 2px;
+}
+
+/* Add underline effect */
+#more-article::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8B0000;
+    display: none;
 }
 
 #more-article::after {
     content: "+";
     display: inline-block;
     margin-left: 4px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease; /* Made plus rotation smoother */
 }
 
 /* Hover effects */
 #more-article:hover {
-    transform: scale(1.08);
-    color: black;
+    transform: scale(1.1); /* Increased scale slightly */
+    color: #8B0000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Added smooth easing */
+}
+
+#more-article:hover::before {
+    display: block;
 }
 
 #more-article:hover::after {
     transform: rotate(45deg);
+    color: #8B0000;
 }
-
 .news-title {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #7c0a02;
     margin: 0;
 }
@@ -188,27 +207,50 @@
 .learn-more-text {
     color: #000;
     font-family: Inter;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    transition: all 0.3s ease;  
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.learn-more-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8B0000;
+    display: none; 
 }
 
 .learn-more-plus {
     color: #000;
     font-size: 1.2rem;
     font-weight: 600;
-    margin-left: 2px;  
-    transition: transform 0.3s ease;
+    margin-left: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.learn-more-top:hover .learn-more-text::after {
+    display: block;
+}
+
+
+.learn-more-top:hover .learn-more-text,
+.learn-more-top:hover .learn-more-plus {
+    color: #8B0000;
 }
 
 .learn-more-top:hover {
-    transform: scale(1.1);  
+    transform: scale(1.1);
 }
 
 .learn-more-top:hover .learn-more-plus {
     transform: rotate(45deg);
 }
-
 .research-header {
     text-align: center;
     margin-bottom: 40px;
@@ -294,16 +336,16 @@
 }
 
 .research-image {
-    width: 100%;
-    height: 400px;
+    width: 105%;
+    height: 110%;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .research-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 450px;
+    height: 500px;
+    object-fit: scale-down;
 }
 .about-page-title {
     width: 100%;
@@ -333,6 +375,7 @@
     align-items: center;
     gap: 4px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .about-learn-more-text {
@@ -341,18 +384,44 @@
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+
+.about-learn-more-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8B0000;
+    display: none;
 }
 
 .about-learn-more-plus {
     color: #000000;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     margin-left: 2px;
 }
 
+/* Hover effects */
 .about-learn-more:hover {
     transform: translateY(-50%) scale(1.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-learn-more:hover .about-learn-more-text,
+.about-learn-more:hover .about-learn-more-plus {
+    color: #8B0000;
+}
+
+.about-learn-more:hover .about-learn-more-text::after {
+    display: block;
 }
 
 .about-learn-more:hover .about-learn-more-plus {
