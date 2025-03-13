@@ -14,25 +14,25 @@
 </section>
     <div class="news-grid">
         <div class="news-item">
-            <img src="../imgs/news1.jpg" alt="WMSU-Rankings">
+            <img src="../imgs/news1.png" alt="WMSU-Rankings">
             <h6 class = "inter-medium">WMSU Ranks Among Top Universities in the Philippines</h6>
             <p class = "inter-light">Western Mindanao State University (WMSU) has been recognized as one of the top universities in the country, highlighting its commitment to quality education, research, and community development.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/news2.jpg" alt="Smart Research Hub">
+            <img src="../imgs/news2.png" alt="Smart Research Hub">
             <h6 class = "inter-medium">New Smart Research Hub for Students and Faculty</h6>
             <p class = "inter-light">WMSU leads its state-of-the-art Smart Research Hub, providing students and faculty with advanced facilities to support academic research, innovation, and collaboration.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/news3.jpg" alt="Global-Partnerships">
+            <img src="../imgs/news3.png" alt="Global-Partnerships">
             <h6 class = "inter-medium">WMSU Strengthens Global Partnerships for Academic Excellence</h6>
             <p class = "inter-light">The university has signed new agreements with international institutions to expand exchange programs, research collaborations, and scholarship opportunities for students.</p>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="news-item">
-            <img src="../imgs/news4.jpg" alt="Science Fair">
+            <img src="../imgs/news4.png" alt="Science Fair">
             <h6 class = "inter-medium">Students Win Big at National Science and Technology Fair</h6>
             <p class = "inter-light">A team of WMSU students has brought home top honors from the National Science and Technology Fair, showcasing groundbreaking projects in sustainability and digital innovation.</p>
             <a href="#" class="read-more">Read More ></a>
