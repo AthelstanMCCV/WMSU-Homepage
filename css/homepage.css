@@ -450,7 +450,7 @@
 }
 
 .presidents-corner {
-    padding: 4rem 0;
+    padding: 0;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -462,17 +462,17 @@
 .corner-container {
     width: 100%;
     max-width: 1800px;
-    margin: 0 auto;
+    margin: 0;
     display: grid;
     grid-template-columns: 1.2fr 1.7fr;
     gap: 4rem;
-    padding: 3rem 5rem;
+    padding: 0 5rem;
+    height: 100vh;
 }
-
 
 .corner-image {
     width: 600px;
-    height: auto;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     border-radius: 0 0 100px 0;
@@ -485,13 +485,16 @@
     display: block;
 }
 
-
 .corner-content {
     position: relative;
     margin-right: 70px;
     left: 90px;
+    padding: 2rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .section-title {
     color: #8B0000;
     font-size: 3.54994rem;
@@ -503,8 +506,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 2rem; 
+    height: 100%; 
+    justify-content: flex-start;
 }
-
 .report-item {
     display: flex;
     justify-content: space-between;
