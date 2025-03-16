@@ -1,20 +1,21 @@
-<?php 
-$baseUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE';
-;
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/vendor/datatable-2.1.8/datatables.min.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/navbar.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/subpages-style.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/homepage.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/fonts.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/linkages.css">
-<link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/footer.css">
+    <style>
+        <?php require_once '../vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css'; ?>
+        <?php require_once '../vendor/datatable-2.1.8/datatables.min.css'; ?>
+        <?php require_once '../css/navbar.css'; ?>
+        <?php require_once '../css/homepage.css'; ?>
+        <?php require_once '../css/fonts.css'; ?>
+        <?php require_once '../css/linkages.css'; ?>
+        <?php require_once '../css/footer.css'; ?>
 
+    </style>
 
-<script src="<?php echo $baseUrl; ?>/vendor/jquery-3.7.1/jquery-3.7.1.min.js"></script>
-<script src="<?php echo $baseUrl; ?>/vendor/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <?php # Lateef Fonts ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,3 +30,4 @@ $baseUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>

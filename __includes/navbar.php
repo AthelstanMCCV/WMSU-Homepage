@@ -1,10 +1,7 @@
-<head>
-  <?php require_once "head.php"; ?>
-</head>
 <nav>
     <section class="nav-cont">
         <div class="WMSU-Logo-cont">
-            <img src="/WMSU-HOMEPAGE/imgs/WMSU-Logo.png" alt="" class="WMSU-Logo">
+            <img src="../imgs/WMSU-Logo.png" alt="" class="WMSU-Logo">
             <div class="logo-text">
                 <div class="nav-logo-line"></div>
                 <div class="nav-title-cont">
@@ -69,81 +66,21 @@
             <a class="inter-extralight" id="Academic" href="">ACADEMIC <img src="../imgs/Expand Arrow.png" alt=""></a>
             <div id="Academic-dropdown" class="nav-dropdown">
                 <div class="dropdown-cont">
-                <div class="dropdown-title">
+                    <div class="dropdown-title">
                         <div class="dropdown-content">
-                            <h6 class="inter-bold">COLLEGE DEPARTMENT</h6>
-                            
-                            <div class="two-columns">
-                            
-                                <div class="dropdown-col-1">
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/law.php'; ?>">College of Law</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/agriculture.php'; ?>">College of Agriculture</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/architecture.php'; ?>">College of Architecture</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/liberalArts.php'; ?>">College of Liberal Arts</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/nursing.php'; ?>">College of Nursing</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/asianAndIslamic.php'; ?>">College of Asian and Islamic Studies</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/CSM.php'; ?>">College of Science and Mathematics</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/CCS.php'; ?>">College of Computing Studies</a></p>
-                                </div>
-                                <div class="dropdown-col-2">
-                            
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/forestryAndEnvironmental.php'; ?>">College of Forestry and Environmental Studies</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/crim.php'; ?>">College of Criminal Justice Education</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/homeEcon.php'; ?>">College of Home Economics</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/engineering.php'; ?>">College of Engineering</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/medicine.php'; ?>">College of Medicine</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/publicAdmin.php'; ?>">College of Public Administration and Development Studies</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/sportsScience.php'; ?>">College of Sports Science and Physical Education</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/socialWork.php'; ?>">College of Social Work and Community Development</a></p>
-                                    <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/academics/teachingEd.php'; ?>">College of Teaching Education</a></p>
-                                </div>
-                            </div>
-
+                            <h1>Academic</h1>
                         </div>
-
-                        <div class="nav-divider"></div>
-                        <div class="dropdown-content">
-                            <h6 class="inter-bold">BASIC EDUCATION DEPARTMENT</h6>
-                            <p class="inter-light">Elementary</p>
-                            <p class="inter-light">Junior HighSchool</p>
-                            <p class="inter-light">Senior HighSchool</p>
-                        </div>
-                        <div class="nav-divider"></div>
-                        <div class="dropdown-content">
-                            <h6 class="inter-bold">EXTERNAL STUDIES UNIT</h6>
-                            <div class="two-columns">                                
-                                <div class="dropdown-col-1">
-                                    <p class="inter-light"><a href="#">WMSU ESU - Alicia</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Aurora</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Diplahan</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Imelda</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Ipil</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Mabuhay</a></p>
-                                </div>
-                                <div class="dropdown-col-2">
-                                    <p class="inter-light"><a href="#">WMSU ESU - Molave</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Naga</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Olutanga</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Pagadian City</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Siay</a></p>
-                                    <p class="inter-light"><a href="#">WMSU ESU - Tungawan</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-divider"></div>
-                        <div class="dropdown-content">
-                            <h6 class="inter-bold">ADMISSIONS</h6>
-                            <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/admissions/admissionGuide.php'; ?>">Admission Guide</a></p>
-                            <p class="inter-light"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/WMSU-HOMEPAGE/page/admissions/enrollmentProced.php'; ?>">Enrollment Procedure</a></p>
-                        </div>
-
                     </div>
                 </div>
             </div>
             <a class="inter-extralight" id="Administration" href="">ADMINISTRATION <img src="../imgs/Expand Arrow.png" alt=""></a>
             <div id="Administration-dropdown" class="nav-dropdown">
                 <div class="dropdown-cont">
-                    <h1>Administration</h1>
+                    <div class="dropdown-title">
+                        <div class="dropdown-content">
+                            <h1>Administration</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a class="inter-extralight" id="Research" href="">RESEARCH <img src="../imgs/Expand Arrow.png" alt=""></a>
