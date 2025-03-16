@@ -13,6 +13,7 @@
         <?php require_once '../css/fonts.css'; ?>
         <?php require_once '../css/linkages.css'; ?>
         <?php require_once '../css/footer.css'; ?>
+        <?php require_once '../css/services.css'; ?>
 
     </style>
 
