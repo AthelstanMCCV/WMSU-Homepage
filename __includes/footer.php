@@ -58,3 +58,4 @@
 <!-- Custom JS -->
 <script src="../js/linkages.js"></script>
 <script src="../js/homepage.js"></script>
+<script src="../js/ResExt.js"></script>
