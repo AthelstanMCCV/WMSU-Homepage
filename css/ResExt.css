@@ -1,75 +1,104 @@
 .ResExtHeroCont{
     width: 100vw;
-    height: 400px;
+    height: 700px;
     background-image: linear-gradient(rgba(86, 7, 1, 0.8), rgba(88, 8, 2, 0.8)), url(../imgs/CTE-Field.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ResExtHero{
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 85px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 250px;
 }
 
 .ResExtHeroTitle{
-    font-size: 40px;
+    font-size: 156px;
     color: white;
     text-transform: uppercase;
+    margin: 0;
 }
 
-.ResExtHeroImg{
-    width: 280px;
-    height: 280px;
+.ResExtHeroSubTitle{
+    font-size: 39px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: -60px;
 }
 
-.ResExtSubNavCont{
+.ResExtLinkBoxCont{
     width: 100vw;
-    height: 80px;
-    border-bottom: 1.5px solid #BD0F03;
-    margin-bottom: 25px;
+    height: 200px;
+    position: relative;
 }
 
-.ResExtSubNav{
+.ResExtLinkBoxes{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.ResExtSubNavLinks{
-    margin: 0 30px;
-    color: #BD0F03;
-    text-decoration: none;
-    transition: ease-in-out .2s;
-}
-
-.ResExtSubNavLinks:hover{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    text-decoration: underline;
-    transition: ease-in-out .2s;
-}
-
-.ResExtSubNavDropDown-1{
-    width: 100vw;
-    height: 300px;
-    visibility: hidden;
     position: absolute;
-    left: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out, visibility .1s linear .1s;
-    transform: translateY(-25px);
+    top: -50px;
+    gap: 40px;
 }
 
-.ResExtShowDD{
-    visibility: visible;
+.ResExtLinkBox{
+    width: 250px;
+    height: 125px;
+    background-color: #EEEEEE;
+    border: 10px solid white;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.ResExtSubNavDDCntr{
+.RexExtLinkBoxLogo{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -15px;
+    top: -28px;
+}
 
+.RexExtLinkBoxText{
+    font-size: 16px;
+    color: #BD0F03;
+    margin: 0;
+    line-height: .99;
+    max-width: 80%; /* Ensures text doesn't overflow */
+    word-wrap: break-word; /* Ensures long words wrap */
+}
+
+.RexExtLinkBoxAddIcon{
+    font-size: 26px;
+    color: #BD0F03;
+    position: absolute;
+    bottom: -16px;
+    right: 10px;
+}
+
+.ResExtLinkBox:hover {
+    background-color: #BD0F03;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Change text color inside when hovering */
+.ResExtLinkBox:hover .RexExtLinkBoxText,
+.ResExtLinkBox:hover .RexExtLinkBoxAddIcon {
+    color: white;
 }

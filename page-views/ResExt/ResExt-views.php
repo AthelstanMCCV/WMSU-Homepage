@@ -1,24 +1,45 @@
 <section class="ResExtHeroCont">
     <div class="ResExtHero">
-        <p class="ResExtHeroTitle inter-black">Extension Services</p>
-        <img class="ResExtHeroImg" src="../imgs/WMSU-Logo.png" alt="">
+        <p class="ResExtHeroTitle inter-black">ABOUT</p>
+        <p class="ResExtHeroSubTitle inter-semibold">EXTENSION SERVICES</p>
     </div>
 </section>
-<section class="ResExtSubNavCont">
-    <div class="ResExtSubNav">
-            <a class="ResExtSubNavLinks inter-extralight" href="">ACTIVITIES, PROJECTS, AND PROGRAMS  <img src="../imgs/ResExtArrow.png" alt=""></a>
-            <a class="ResExtSubNavLinks inter-extralight" href="">EXTENSION UNITS  <img src="../imgs/ResExtArrow.png" alt=""></a>
-            <a class="ResExtSubNavLinks inter-extralight" href="">RESEARCH CENTERS  <img src="../imgs/ResExtArrow.png" alt=""></a>
-            <a class="ResExtSubNavLinks inter-extralight" href="">RESEARCH OFFICES  <img src="../imgs/ResExtArrow.png" alt=""></a>
-            <a class="ResExtSubNavLinks inter-extralight" href="">RESEARCH UNITS  <img src="../imgs/ResExtArrow.png" alt=""></a>
-    </div>
-</section>
-<section class="ResExtSubNavDropDown-1" id="ResExtSubNavDropDown-1">
-    <div class="ResExtSubNavDDCntr">
-        <p class="ResExtSubNavDDLinks">Capacity Building</p>
-        <p class="ResExtSubNavDDLinks">Funded Research and Projects</p>
-        <p class="ResExtSubNavDDLinks">Intellectual Property</p>
-        <p class="ResExtSubNavDDLinks">Research Ethics</p>
-        <p class="ResExtSubNavDDLinks">Research Dissemination</p>
+<section class="ResExtLinkBoxCont">
+    <div class="ResExtLinkBoxes">
+        <div class="ResExtLinkBox">
+            <div class="RexExtLinkBoxLogo">
+                <img src="../imgs/puzzle-pieces 1.png" alt="">
+            </div>
+            <p class="RexExtLinkBoxText inter-bold">Activities, Projects and Programs</p>
+            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
+        </div>
+        <div class="ResExtLinkBox">
+            <div class="RexExtLinkBoxLogo">
+                <img src="../imgs/lab 1.png" alt="">
+            </div>
+            <p class="RexExtLinkBoxText inter-bold">Research Centers</p>
+            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
+        </div>
+        <div class="ResExtLinkBox">
+            <div class="RexExtLinkBoxLogo">
+                <img src="../imgs/office-building 1.png" alt="">
+            </div>
+            <p class="RexExtLinkBoxText inter-bold">Research Offices</p>
+            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
+        </div>
+        <div class="ResExtLinkBox">
+            <div class="RexExtLinkBoxLogo">
+                <img src="../imgs/research-and-development 1.png" alt="">
+            </div>
+            <p class="RexExtLinkBoxText inter-bold">Research Units</p>
+            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
+        </div>
+        <div class="ResExtLinkBox">
+            <div class="RexExtLinkBoxLogo">
+                <img src="../imgs/add 1.png" alt="">
+            </div>
+            <p class="RexExtLinkBoxText inter-bold">Extension Units</p>
+            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
+        </div>
     </div>
 </section>
