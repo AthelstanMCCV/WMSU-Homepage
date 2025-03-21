@@ -24,7 +24,6 @@
             <h6 class="inter-extrabold" id="more-article">MORE ARTICLES</h6>
         </div>
     </div>
-</section>
     <div class="news-grid">
         <div class="news-item">
             <img src="../imgs/news1.png" alt="WMSU-Rankings">

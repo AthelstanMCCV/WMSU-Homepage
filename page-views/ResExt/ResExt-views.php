@@ -43,3 +43,21 @@
         </div>
     </div>
 </section>
+
+<section class="ResExtDividerCont">
+    <div class="ResExtDivider"></div>
+</section>
+
+<section class="ResExtOffDescCont">
+    <div class="ResExtOffDesc">
+        <p class="ResExtOffDescTitle inter-black">Office Description</p>
+        <div class="ResExtOffDescContent">
+            <div class="ResExtOffDescImg"></div>
+            <p class="ResExtOffDescText inter-medium">The mandate of Western Mindanao State University is to serve as an instrument for the  promotion of socio-economic advancement of the various cultural communities in the region.  One of the organizational outcomes of WMSU is attaining improved higher education research  to promote economic productivity and innovation Research and Development. Aligned with the  new vision of WMSU in 2023 towards becoming a Smart Research University, along its mission  of fostering a vibrant learning environment where science, technology, innovation, research,  arts, humanities, and community engagement thrive, producing world-class professionals  dedicated to sustainable development and peace, the Research and Development policies of  WMSU is enhanced to support these strategic endeavors.</p>
+        </div>
+    </div>
+</section>
+
+<section class="ResExtMisVisCont">
+
+</section>
