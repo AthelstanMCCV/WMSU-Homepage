@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipeable/Draggable Element</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .swipable-container {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .swipable-content {
+            display: flex;
+            gap: 10px;
+            cursor: grab; /* Show grab cursor */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            background: coral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border-radius: 10px;
+            user-select: none; /* Prevents text selection while dragging */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swipable-container">
+        <div class="swipable-content" id="swipeElement">
+            <div class="box">Swipe Me</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+    </div>
+
+    <script>
+        const swipeElement = document.getElementById("swipeElement");
+
+        let isDragging = false;
+        let startX = 0;
+        let currentX = 0;
+        let moveX = 0;
+
+        // 🖱 Mouse Events (for PC)
+        swipeElement.addEventListener("mousedown", (event) => {
+            isDragging = true;
+            startX = event.clientX;
+            swipeElement.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (event) => {
+            if (!isDragging) return;
+            currentX = event.clientX;
+            moveX = currentX - startX;
+            swipeElement.style.transform = `translateX(${moveX}px)`;
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            swipeElement.style.cursor = "grab";
+            swipeElement.style.transform = "translateX(0)"; // Reset position
+        });
+
+        // 📱 Touch Events (for Mobile)
+        swipeElement.addEventListener("touchstart", (event) => {
+            startX = event.touches[0].clientX;
+        });
+
+        swipeElement.addEventListener("touchmove", (event) => {
+            currentX = event.touches[0].clientX;
+            moveX = currentX - startX;
+            swipeElement.style.transform = `translateX(${moveX}px)`;
+        });
+
+        swipeElement.addEventListener("touchend", () => {
+            swipeElement.style.transform = "translateX(0)"; // Reset position
+        });
+
+    </script>
+
+</body>
+</html>
