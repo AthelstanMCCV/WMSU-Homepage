@@ -173,3 +173,13 @@
         </div>
     </div>
 </section>
+
+<section class="ResExtOrgChartCont">
+    <div class="ResExtOrgChart">
+        <div class="ResExtOrgChartTextCont">
+            <p class="ResExtOrgChartTitle inter-black">organizational Chart</p>
+            <p class="ResExtOrgChartText">From 2024 onwards, the University Research Center has expanded its functions and initiated the  creation of R&D Centers specific to the field of academic disciplines in the university.</p>
+        </div>
+        <img class="ResExtOrgChartImg" src="../imgs/ResExtImg.png" alt="">
+    </div>
+</section>
