@@ -112,6 +112,9 @@
     width: 100%;
     height: 50%;
     background-color: #EEEEEE;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .ResExtResDevTopImg{
@@ -133,6 +136,7 @@
     color: #BD0F03;
     font-size: 45px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .ResExtResDevTopUnderline{
@@ -152,4 +156,65 @@
     top: 50%;
     right: 6%;
     transform: translateY(35%);
+}
+
+.ResExtResDevBotBtn{
+    width: 220px;
+    height: 60px;
+    background-color: #BD0F03;
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.ResExtServCont{
+    width: 100vw;
+    height: 800px;
+}
+
+.ResExtServTop{
+    width: 100%;
+    height: 50%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ResExtServBot{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ResExtServTopTitleCont{
+    margin-left: 150px;
+}
+
+.ResExtServTopText{
+    width: 580px;
+    font-size: 24px;   
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(50%);
+}
+
+.ResExtServBotBtn{
+    width: 220px;
+    height: 60px;
+    background-color: #BD0F03;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 22px;
+    border-radius: 20px;
 }

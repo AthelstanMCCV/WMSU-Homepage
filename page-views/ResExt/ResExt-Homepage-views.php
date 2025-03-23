@@ -44,3 +44,17 @@
         <div class="ResExtResDevBotBtn">See More <img src="../imgs/Arrow 2.png" alt=""></div>
     </div>
 </section>
+
+<section class="ResExtServCont">
+    <div class="ResExtServTop">
+        <div class="ResExtResDevTopImg"></div>
+        <div class="ResExtServTopTitleCont">
+            <p class="ResExtResDevTopTitle inter-black">Extension Services</p>
+            <div class="ResExtResDevTopUnderline"></div>
+        </div>
+        <p class="ResExtServTopText inter-light">The extension services offered are derived from research findings and technical  studies. This may involve activities such as packaging, demonstrating, and  implementing appropriate technologies, materials, and processes within the targeted  communities.</p>
+    </div>
+    <div class="ResExtServBot">
+        <div class="ResExtServBotBtn">See More <img src="../imgs/Arrow 2.png" alt=""></div>
+    </div>
+</section>
