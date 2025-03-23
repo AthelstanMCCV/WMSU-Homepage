@@ -36,3 +36,7 @@ scrollContainer.addEventListener("wheel", (e) => {
         behavior: "smooth"
     });
 });
+
+$(document).ready(function () {
+
+});

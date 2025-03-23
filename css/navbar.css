@@ -76,6 +76,7 @@ nav{
     color: #BD0F03;
     font-size: 12px;
     margin-right: 25px;
+    text-transform: uppercase;
 }
 
 .nav-links > a img {

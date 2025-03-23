@@ -4,45 +4,8 @@
         <p class="ResExtHeroSubTitle inter-semibold">EXTENSION SERVICES</p>
     </div>
 </section>
-<section class="ResExtLinkBoxCont">
-    <div class="ResExtLinkBoxes">
-        <div class="ResExtLinkBox">
-            <div class="RexExtLinkBoxLogo">
-                <img src="../imgs/puzzle-pieces 1.png" alt="">
-            </div>
-            <p class="RexExtLinkBoxText inter-bold">Activities, Projects and Programs</p>
-            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
-        </div>
-        <div class="ResExtLinkBox">
-            <div class="RexExtLinkBoxLogo">
-                <img src="../imgs/lab 1.png" alt="">
-            </div>
-            <p class="RexExtLinkBoxText inter-bold">Research Centers</p>
-            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
-        </div>
-        <div class="ResExtLinkBox">
-            <div class="RexExtLinkBoxLogo">
-                <img src="../imgs/office-building 1.png" alt="">
-            </div>
-            <p class="RexExtLinkBoxText inter-bold">Research Offices</p>
-            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
-        </div>
-        <div class="ResExtLinkBox">
-            <div class="RexExtLinkBoxLogo">
-                <img src="../imgs/research-and-development 1.png" alt="">
-            </div>
-            <p class="RexExtLinkBoxText inter-bold">Research Units</p>
-            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
-        </div>
-        <div class="ResExtLinkBox">
-            <div class="RexExtLinkBoxLogo">
-                <img src="../imgs/add 1.png" alt="">
-            </div>
-            <p class="RexExtLinkBoxText inter-bold">Extension Units</p>
-            <p class="RexExtLinkBoxAddIcon inter-black">+</p>
-        </div>
-    </div>
-</section>
+
+<?php require_once '../__includes/ResExtSubNav.php' ?>
 
 <section class="ResExtDividerCont">
     <div class="ResExtDivider"></div>
@@ -65,11 +28,11 @@
     </div>
     <div class="ResExtMisVisBoxCont">
         <div class="ResExtMisVisBox">
-            <p class="ResExtMisVisBoxText inter-regular">The Research & Development Cluster aims to be the vital enabler of research and development  services in WMSU for faculty and students to create socially responsive innovative research and  scientific breakthroughs that blend cutting-edge technologies with human-centric approaches,  creating a harmonious and sustainable quality of life for individuals and industries.</p>
+            <p class="ResExtMisVisBoxText inter-regular">By 2040, WMSU is a Smart Research University generating competent  professionals and global citizens engendered by the knowledge from sciences and  liberal education, empowering communities, promoting peace, harmony, and cultural  diversity.</p>
             <a href="" class="ResExtMisVisBoxBtn">Mission</a>
         </div>
         <div class="ResExtMisVisBox">
-            <p class="ResExtMisVisBoxText inter-regular">The Research & Development Cluster aims to be the vital enabler of research and development  services in WMSU for faculty and students to create socially responsive innovative research and  scientific breakthroughs that blend cutting-edge technologies with human-centric approaches,  creating a harmonious and sustainable quality of life for individuals and industries.</p>
+            <p class="ResExtMisVisBoxText inter-regular">By 2040, WMSU is a Smart Research University generating competent  professionals and global citizens engendered by the knowledge from sciences and  liberal education, empowering communities, promoting peace, harmony, and cultural  diversity.</p>
             <a href="" class="ResExtMisVisBoxBtn">Vision</a>
         </div>
     </div>
@@ -82,13 +45,10 @@
             <img class="ResExtCoreCompArrow" src="../imgs/Arrow 2.png" alt="">
         </div>
         <div class="ResExtCoreCompScrollable" id="ResExtCoreCompScrollable">
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Research Collaboration and Linkages</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Technology Generation and Innovation</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Evaluation and Analysis</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Policy Formulation</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Planning and Development of Groundbreaking Knowledge</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Institution Building and Capacity Development</p></div>
-            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Promotion and Dissemination</p></div>
+            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium"> Considers "Adopt a community" as an innovative strategy for change and development;</p></div>
+            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Implement programs to address the basic needs of the beneficiary communities;</p></div>
+            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Provides services for sustainable socio-economic development;</p></div>
+            <div class="ResExtCoreCompScrollElem"><p class="ResExtCoreCompScrollElemText inter-medium">Forges with other agencies for stronger partnership, creating greater impact   on the lives of the people and community it serves.</p></div>
         </div>
     </div>
 </section>
@@ -178,8 +138,8 @@
     <div class="ResExtOrgChart">
         <div class="ResExtOrgChartTextCont">
             <p class="ResExtOrgChartTitle inter-black">organizational Chart</p>
-            <p class="ResExtOrgChartText">From 2024 onwards, the University Research Center has expanded its functions and initiated the  creation of R&D Centers specific to the field of academic disciplines in the university.</p>
+            <p class="ResExtOrgChartText">It shows the organization structure of Department of External Services and Community Development. It illustrates the different  levels of management that handle the extension programs of the university.</p>
         </div>
-        <img class="ResExtOrgChartImg" src="../imgs/ResExtImg.png" alt="">
+        <img class="ResExtOrgChartImg" src="../imgs/ResExtImg2.png" alt="">
     </div>
 </section>

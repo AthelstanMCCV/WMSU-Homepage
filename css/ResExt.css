@@ -294,7 +294,7 @@
     -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
     cursor: grab; /* Show grab cursor */
     width: 100vw; /* Ensure enough space */
-    padding: 70px 0; /* Prevent accidental clicks */
+    padding: 70px 60px; /* Prevent accidental clicks */
     -webkit-overflow-scrolling: touch; /* Enables smooth inertia scrolling on iOS */
     overscroll-behavior: contain; /* Prevents accidental page scrolling */
 }
@@ -305,8 +305,8 @@
 }
 
 .ResExtCoreCompScrollElem {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     background-color: white;
     border-radius: 0 20px 0 20px;
     margin: 0 25px;
@@ -315,6 +315,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ResExtCoreCompScrollElemText{

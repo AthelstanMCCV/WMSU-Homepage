@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <a class="inter-extralight" id="Research" href="">RESEARCH <img src="../imgs/Expand Arrow.png" alt=""></a>
+            <a class="inter-extralight" id="Research" href="">RESEARCH & Extension <img src="../imgs/Expand Arrow.png" alt=""></a>
             <div id="Research-dropdown" class="nav-dropdown">
                 <h6 class="dropdown-title">RESEARCH</h6>
             </div>
