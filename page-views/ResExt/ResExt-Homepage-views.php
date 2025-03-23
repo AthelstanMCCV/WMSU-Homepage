@@ -47,7 +47,7 @@
 
 <section class="ResExtServCont">
     <div class="ResExtServTop">
-        <div class="ResExtResDevTopImg"></div>
+        <div class="ResExtServTopImg"></div>
         <div class="ResExtServTopTitleCont">
             <p class="ResExtResDevTopTitle inter-black">Extension Services</p>
             <div class="ResExtResDevTopUnderline"></div>
@@ -56,5 +56,38 @@
     </div>
     <div class="ResExtServBot">
         <div class="ResExtServBotBtn">See More <img src="../imgs/Arrow 2.png" alt=""></div>
+    </div>
+</section>
+
+<section class="ResExtResDevCont">
+    <div class="ResExtResDevTop">
+        <div class="ResExtResDevTopImg"></div>
+        <div class="ResExtLinkTopTitleCont">
+            <p class="ResExtResDevTopTitle inter-black">External Linkages</p>
+            <div class="ResExtResDevTopUnderline"></div>
+        </div>
+        <p class="ResExtResDevTopText inter-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </div>
+    <div class="ResExtResDevBot">
+        <div class="ResExtResDevBotBtn">See More <img src="../imgs/Arrow 2.png" alt=""></div>
+    </div>
+</section>
+
+<section class="ResExtHPDividerCont">
+    <div class="ResExtHPDivider"></div>
+</section>
+
+<section class="ResExtOVPCont">
+    <div class="ResExtOVP">
+        <div class="ResExtOVPImg"></div>
+        <div class="ResExtOVPContent">
+            <p class="ResExtOVPTitle inter-bold">OFFICE OF THE VICE PRESIDENT</p>
+            <p class="ResExtOVPSubTitle inter-bold">for Research, Extension  and External Linkages</p>
+            <div class="ResExtResDevTopUnderline"></div>
+            <div class="ResExtOVPHeadCont">
+                <p class="ResExtOVPHead inter-bold">DR. JOEL G. FERNANDO</p>
+                <p class="ResExtOVPHeadSchool inter-semibold">Western Mindanao State University</p>
+            </div>
+        </div>
     </div>
 </section>
