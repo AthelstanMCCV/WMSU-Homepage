@@ -1441,9 +1441,9 @@
 
     /* Text Container */
     .news-item-content {
-        position: relative;
-        display: inline;
+        position: absolute;
         bottom: -100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
         left: 0;
         right: 0;;
         padding: 20px;
@@ -1455,17 +1455,29 @@
     }
 
     .news-item h6 {
-        color: #7c0a02;
+        color: white;
         font-size: 1.2rem;
         margin-bottom: 10px;
         padding: 0;
     }
 
     .news-item p {
-        color: #7C0A02;
+        color: rgba(255,255,255,0.8);
         font-size: 0.9rem;
         margin-bottom: 10px;
         padding: 0;
+    }
+    
+    .read-more {
+        position: relative;
+        bottom: auto;
+        text-align: center;
+        width: 100%;
+        background: transparent;
+    }
+
+    .read-more::after {
+        margin-left: 5px;
     }
 
     .news-item .read-more {
@@ -1497,7 +1509,7 @@
         transform: scale(1.2);
     }
 }
-
+   
 
 @media screen and (max-width: 768px) {
     .research-archives {
