@@ -1,3 +1,5 @@
+/* navbar.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -76,7 +78,6 @@ nav{
     color: #BD0F03;
     font-size: 12px;
     margin-right: 25px;
-    text-transform: uppercase;
 }
 
 .nav-links > a img {
@@ -251,4 +252,233 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+/* ... existing code ... */
+
+/* Add hamburger menu styles */
+.hamburger-menu {
+    display: none; /* Hidden by default for desktop */
+    cursor: pointer;
+}
+
+/* Mobile styles */
+/* Small Mobile Devices (320px - 375px) */
+@media screen and (max-width: 375px) {
+    nav {
+        height: 50px;
+    }
+
+    .nav-cont {
+        padding: 0 8px;
+    }
+
+    .WMSU-Logo-cont {
+        height: 50px;
+        max-width: calc(100% - 40px);
+    }
+
+    .WMSU-Logo {
+        height: 28px;
+        width: 28px;
+        min-width: 28px;
+    }
+
+    .nav-logo-line {
+        height: 24px;
+        margin: 0 4px;
+    }
+
+    .nav-logo-title {
+        font-size: 9px;
+    }
+
+    .nav-logo-subtitle {
+        font-size: 7px;
+    }
+
+    .hamburger-menu {
+        width: 18px;
+        height: 12px;
+        margin-right: 15px; /* Added margin from right side */
+    }
+
+    .hamburger-menu span {
+        height: 1.5px;
+    }
+}
+
+/* Medium Mobile Devices (376px - 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+    nav {
+        height: 55px;
+    }
+
+    .nav-cont {
+        padding: 0 10px;
+    }
+
+    .WMSU-Logo-cont {
+        height: 55px;
+        max-width: calc(100% - 42px);
+    }
+
+    .WMSU-Logo {
+        height: 32px;
+        width: 32px;
+        min-width: 32px;
+    }
+
+    .nav-logo-line {
+        height: 28px;
+        margin: 0 5px;
+    }
+
+    .nav-logo-title {
+        font-size: 10px;
+    }
+
+    .nav-logo-subtitle {
+        font-size: 8px;
+    }
+
+    .hamburger-menu {
+        width: 20px;
+        height: 14px;
+    }
+
+    .hamburger-menu span {
+        height: 1.8px;
+    }
+}
+
+/* Large Mobile Devices (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        height: 60px;
+    }
+
+    .nav-cont {
+        padding: 0 15px;
+    }
+
+    .WMSU-Logo-cont {
+        height: 60px;
+        max-width: calc(100% - 45px);
+    }
+
+    .WMSU-Logo {
+        height: 35px;
+        width: 35px;
+        min-width: 35px;
+    }
+
+    .nav-logo-line {
+        height: 30px;
+        margin: 0 6px;
+    }
+
+    .nav-logo-title {
+        font-size: 12px;
+    }
+
+    .nav-logo-subtitle {
+        font-size: 9px;
+    }
+
+    .hamburger-menu {
+        width: 22px;
+        height: 15px;
+    }
+
+    .hamburger-menu span {
+        height: 2px;
+    }
+}
+
+/* Common styles for all mobile sizes */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        border-bottom: 1px solid rgba(189, 15, 3, 0.1);
+    }
+
+    .nav-cont {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .WMSU-Logo-cont {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-text {
+        margin-left: 6px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-title-cont {
+        margin-left: 0;
+        flex-shrink: 1;
+    }
+
+    .nav-logo-title {
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .nav-logo-subtitle {
+        line-height: 1.1;
+        margin: 1px 0 0 0;
+        white-space: nowrap;
+    }
+
+    /* Hamburger menu */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 12px;
+        padding: 0;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        background-color: #BD0F03;
+        border-radius: 1px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-dropdown {
+        display: none;
+    }
+
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active > a {
+        margin: 8px 0;
+        font-size: 14px;
+        color: #BD0F03;
+        text-align: center;
+    }
 }

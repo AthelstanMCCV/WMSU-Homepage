@@ -10,6 +10,12 @@
                 </div>
             </div>
         </div>
+        <!-- Add hamburger menu -->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="nav-links">
             <a class="inter-extralight" id="Home" href="">HOME</a>
             <a class="inter-extralight" id="About" href="">ABOUT US <img src="../imgs/Expand Arrow.png" alt=""></a>
@@ -83,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <a class="inter-extralight" id="Research" href="">RESEARCH & Extension <img src="../imgs/Expand Arrow.png" alt=""></a>
+            <a class="inter-extralight" id="Research" href="">RESEARCH <img src="../imgs/Expand Arrow.png" alt=""></a>
             <div id="Research-dropdown" class="nav-dropdown">
                 <h6 class="dropdown-title">RESEARCH</h6>
             </div>
