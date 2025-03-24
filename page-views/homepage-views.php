@@ -1,3 +1,92 @@
+<?php 
+require_once '../CMS-WMSU-Website/classes/pages.class.php';
+require_once '../CMS-WMSU-Website/tools/functions.php';
+
+$homepageObj = new Pages;
+
+$homeNewsSQL = "SELECT * from page_sections WHERE pageID = 1 AND indicator = 'Wmsu News';
+";
+$researchArchSQL = "SELECT * from page_sections WHERE pageID = 1 AND indicator = 'Research Archives';
+";
+
+$aboutUsSQL = "SELECT * from page_sections LEFT JOIN subpages ON content = subPageName WHERE pageID = 1 AND indicator = 'About WMSU';
+";
+
+$presCornerSQL = "SELECT * from page_sections WHERE pageID = 1 AND indicator = 'Pres Corner'; 
+";
+
+$servicesSQL = "SELECT * from page_sections WHERE pageID = 1 AND indicator = 'Services';
+";
+
+$homeNewsItems = $homepageObj->execQuery($homeNewsSQL);
+$researchArchItems = $homepageObj->execQuery($researchArchSQL);
+$aboutUsItems = $homepageObj->execQuery($aboutUsSQL);
+$presCornerItems = $homepageObj->execQuery($presCornerSQL);
+$servicesItems = $homepageObj->execQuery($servicesSQL);
+foreach ($homeNewsItems as $items){
+    if ($items['description'] == 'news-title'){
+        $newsTitles[] = $items['content'];
+    }
+    if ($items['description'] == 'news-img'){
+        $newsImgs[] = [
+            'imagePath' => $items['imagePath'],
+            'alt' => $items['alt']
+        ];
+    }
+    if ($items['description'] == 'news-content'){
+        $newsContent[] = $items['content'];
+    }
+    if ($items['description'] == 'news-content'){
+        $newsContent[] = $items['content'];
+    }
+}
+
+foreach ($researchArchItems as $items){
+    if ($items['description'] == 'research-title'){
+        $researchTitles[] = $items['content'];
+    }
+    if ($items['description'] == 'research-author'){
+        $researchAuthors[] = $items['content'];
+    }
+    if ($items['description'] == 'research-description'){
+        $researchDesc[] = $items['content'];
+    }
+    if ($items['description'] == 'research-pub-date'){
+        $researchPubDate[] = $items['content'];
+    }
+}
+
+foreach ($aboutUsItems as $items){
+    if ($items['description'] == 'about-description'){
+        $aboutUsDesc = $items['content'];
+    }
+    if ($items['description'] == 'about-links'){
+        $aboutUsLinks[] = [
+            'content' => $items['content'],
+            'link' => $items['subPagePath']
+        ];
+    }
+}
+
+foreach ($presCornerItems as $items){
+    if ($items['description'] == 'report-title'){
+        $reportTitles[] = $items['content'];
+    }
+    if ($items['description'] == 'report-date'){
+        $reportDates[] = $items['content'];
+    }
+}
+
+foreach($servicesItems as $items){
+    if ($items['description'] == 'service-title'){
+        $serviceTitles[] = $items['content'];
+    }
+    if ($items['description'] == 'service-imgs'){
+        $serviceImages[] = $items['imagePath'];
+    }
+}
+?>
+
 <section class="hero-section-cont">
     <div class="homepage-video-container">
         <video id="delayedVideo" class="homepage-background-video" muted loop>
@@ -25,46 +114,22 @@
         </div>
     </div>
     <div class="news-grid">
-        <div class="news-item">
-            <img src="../imgs/news1.png" alt="WMSU-Rankings">
+        <?php 
+        
+         for($i = 0; $i < count($newsTitles); $i++){
+        ?>
+            <div class="news-item">
             <div class="news-item-content">
-                <h6 class="inter-medium">WMSU Ranks Among Top Universities in the Philippines</h6>
-                <p class="inter-light">Western Mindanao State University (WMSU) has been recognized as one of the top universities in the country, highlighting its commitment to quality education, research, and community development.</p>
-                <a href="#" class="read-more">Read More ></a>
+            <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
+            <h6 class = "inter-medium"><?php echo $newsTitles[$i]?></h6>
+            <p class = "inter-light"><?php echo $newsContent[$i]?></p>
+            <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
-        <div class="news-item">
-            <img src="../imgs/news2.png" alt="Smart Research Hub">
-            <div class="news-item-content">
-                <h6 class="inter-medium">New Smart Research Hub for Students and Faculty</h6>
-                <p class="inter-light">WMSU leads its state-of-the-art Smart Research Hub, providing students and faculty with advanced facilities to support academic research, innovation, and collaboration.</p>
-                <a href="#" class="read-more">Read More ></a>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="../imgs/news3.png" alt="Global-Partnerships">
-            <div class="news-item-content">
-                <h6 class="inter-medium">WMSU Strengthens Global Partnerships for Academic Excellence</h6>
-                <p class="inter-light">The university has signed new agreements with international institutions to expand exchange programs, research collaborations, and scholarship opportunities for students.</p>
-                <a href="#" class="read-more">Read More ></a>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="../imgs/news4.png" alt="Science Fair">
-            <div class="news-item-content">
-                <h6 class="inter-medium">Students Win Big at National Science and Technology Fair</h6>
-                <p class="inter-light">A team of WMSU students has brought home top honors from the National Science and Technology Fair, showcasing groundbreaking projects in sustainability and digital innovation.</p>
-                <a href="#" class="read-more">Read More ></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Carousel Indicators -->
-    <div class="carousel-indicators">
-        <span class="carousel-dot active"></span>
-        <span class="carousel-dot"></span>
-        <span class="carousel-dot"></span>
-        <span class="carousel-dot"></span>
+
+
+        <?php } ?>
     </div>
 </section>
 
@@ -81,18 +146,25 @@
     </div>
     
     <div class="research-content">
+
+    <?php for ($i = 0; $i < count($researchTitles); $i++){
+            
+            ?>
         <div class="research-text">
-            <h3 class="article-title">Artificial Intelligence in Education: Improving Learning Through Smart Tutoring Systems</h3>
+
+            <h3 class="article-title"><?php echo $researchTitles[$i]?></h3>
             
-            <p class="researcher">Lead Researcher: Engr. John Dela Cruz, College of Computing Studies</p>
+            <p class="researcher"><?php echo $researchAuthors[$i]?></p>
             
-            <p class="description">As artificial intelligence (AI) continues to reshape various industries, its role in education has become increasingly significant. This study explores the implementation of AI-powered Smart Tutoring Systems (STS) to enhance student learning experiences. By leveraging machine learning algorithms, natural language processing, and adaptive learning models, these systems provide personalized guidance tailored to each student's learning pace and comprehension level.</p>
+            <p class="description"><?php echo $researchDesc[$i]?></p>
             
             <div class="article-meta">
-                <span class="publish-date">Published: December 2023</span>
+                <span class="publish-date"><?php echo $researchPubDate[$i]?></span>
                 <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
+
+    <?php } ?>
         
         <div class="research-image">
             <img src="../imgs/research.png" alt="Research Image">
@@ -114,25 +186,16 @@
         <div class="vertical-divider"></div>
         <div class="about-content">
             <p class="about-description inter-extralight">
-                Learn how WMSU shapes future leaders, explore our rich history, and become part of a vibrant academic community.
+                <?php echo $aboutUsDesc?>.
             </p>
             <div class="about-links">
-                <a href="#" class="about-link inter-semibold">
-                    <span>History of WMSU</span>
+
+            <?php foreach ($aboutUsLinks as $items){?>
+                <a href="<?php echo $items['link']?>" class="about-link inter-semibold">
+                    <span><?php echo $items['content']?></span>
                     <span class="arrow">></span>
                 </a>
-                <a href="#" class="about-link inter-semibold">
-                    <span>Leadership and Governance</span>
-                    <span class="arrow">></span>
-                </a>
-                <a href="#" class="about-link inter-semibold">
-                    <span>Mission and Vision</span>
-                    <span class="arrow">></span>
-                </a>
-                <a href="#" class="about-link inter-semibold">
-                    <span>WMSU in the Community</span>
-                    <span class="arrow">></span>
-                </a>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -149,40 +212,16 @@
             <h2 class="section-title">PRESIDENT'S CORNER</h2>
             
             <div class="report-links">
+            
+            <?php for ($i = 0; $i < count($reportTitles); $i++) {?>
                 <a href="#" class="report-item">
                     <div class="report-info">
-                        <h3 class ="inter-bold">President's Report 1st Quarter 2024</h3>
-                        <span class="report-date">April 11, 2024</span>
+                        <h3 class ="inter-bold"><?php echo $reportTitles[$i]?></h3>
+                        <span class="report-date"><?php echo $reportDates[$i]?></span>
                     </div>
                 </a>
 
-                <a href="#" class="report-item">
-                    <div class="report-info">
-                        <h3 class ="inter-bold">President's Report 1st Quarter 2023</h3>
-                        <span class="report-date">April 11, 2024</span>
-                    </div>
-                </a>
-
-                <a href="#" class="report-item">
-                    <div class="report-info">
-                        <h3 class ="inter-bold">President's Final Report</h3>
-                        <span class="report-date">April 11, 2024</span>
-                    </div>
-                </a>
-
-                <a href="#" class="report-item">
-                    <div class="report-info">
-                        <h3 class ="inter-bold">President's Report 4th Quarter</h3>
-                        <span class="report-date">April 11, 2024</span>
-                    </div>
-                </a>
-
-                <a href="#" class="report-item">
-                    <div class="report-info">
-                        <h3 class ="inter-bold">President's Report Year 2</h3>
-                        <span class="report-date">April 11, 2024</span>
-                    </div>
-                </a>
+            <?php } ?>
             </div>
         </div>
     </div>
@@ -221,54 +260,23 @@
 <section class="wmsu-services">
     <div class="main-page-titles">SERVICES</div>
     <div class="services-cont">
+
+    <?php for($i = 0; $i < count($serviceTitles); $i++) {?>
         <div class="services-squares">
             <div class="square-cont">
                 <div class="square-raindrop">
                     <div class="square-outer"></div>
                     <div class="square-inner"></div>
                     <div class="square-icon">
-                        <img src="../imgs/Freshman-icon.png" alt="">
+                        <img src="<?php echo $serviceImages[$i]?>" alt="">
                     </div>
                 </div>
-                <div class="square-text">Freshman Online Pre-Admission</div>
+                <div class="square-text"><?php echo $serviceTitles[$i]?></div>
             </div>
         </div>
-        <div class="services-squares">
-            <div class="square-cont">
-                <div class="square-raindrop">
-                    <div class="square-outer"></div>
-                    <div class="square-inner"></div>
-                    <div class="square-icon">
-                        <img src="../imgs/Old Student-icon.png" alt="">
-                    </div>
-                </div>
-                <div class="square-text">Online Registration (Old Student)</div>
-            </div>
-        </div>
-        <div class="services-squares">
-            <div class="square-cont">
-                <div class="square-raindrop">
-                    <div class="square-outer"></div>
-                    <div class="square-inner"></div>
-                    <div class="square-icon">
-                        <img src="../imgs/Advising-icon.png" alt="">
-                    </div>
-                </div>
-                <div class="square-text">Online Advising</div>
-            </div>
-        </div>
-        <div class="services-squares">
-            <div class="square-cont">
-                <div class="square-raindrop">
-                    <div class="square-outer"></div>
-                    <div class="square-inner"></div>
-                    <div class="square-icon">
-                        <img src="../imgs/Enlistment-icon.png" alt="">
-                    </div>
-                </div>
-                <div class="square-text">Online Enlistment</div>
-            </div>
-        </div>
+       
+        <?php } ?>
+
         <div class="services-rectangle">
             <div class="rectangle-text">
                 <div class="rectangle-text-hide">WMSU<br>SERVICES</div>

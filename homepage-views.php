@@ -119,10 +119,12 @@ foreach($servicesItems as $items){
          for($i = 0; $i < count($newsTitles); $i++){
         ?>
             <div class="news-item">
+            <div class="news-item-content">
             <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
             <h6 class = "inter-medium"><?php echo $newsTitles[$i]?></h6>
             <p class = "inter-light"><?php echo $newsContent[$i]?></p>
             <a href="#" class="read-more">Read More ></a>
+            </div>
         </div>
 
 
