@@ -1,5 +1,5 @@
 <?php
-require_once "Q:/XAMPP/htdocs/WMSU-HOMEPAGE/CMS-WMSU-Website/tools/functions.php";
+require_once "D:/XAMPP/htdocs/WMSU-HOMEPAGE/CMS-WMSU-Website/tools/functions.php";
 require_once __DIR__ . "/db_connection.class.php";
 
     class Pages{
