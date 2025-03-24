@@ -103,7 +103,7 @@
         </div>
         <div class="ResExtObjectivesContent">
             <div class="ResExtObjectivesTimeline">
-                <div class="ResExtObjectivesTimelineCircle inter-black active">1</div>
+                <div class="ResExtObjectivesTimelineCircle inter-black ResExtactive">1</div>
                     <div class="ResExtObjectivesTimelineLine"></div>
                 <div class="ResExtObjectivesTimelineCircle inter-black">2</div>
                     <div class="ResExtObjectivesTimelineLine"></div>
