@@ -36,9 +36,6 @@ foreach ($homeNewsItems as $items){
     if ($items['description'] == 'news-content'){
         $newsContent[] = $items['content'];
     }
-    if ($items['description'] == 'news-content'){
-        $newsContent[] = $items['content'];
-    }
 }
 
 foreach ($researchArchItems as $items){
@@ -120,16 +117,20 @@ foreach($servicesItems as $items){
         ?>
             <div class="news-item">
             <div class="news-item-content">
-            <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
-            <h6 class = "inter-medium"><?php echo $newsTitles[$i]?></h6>
-            <p class = "inter-light"><?php echo $newsContent[$i]?></p>
-            <a href="#" class="read-more">Read More ></a>
+                <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
+                <h6 class = "inter-medium"><?php echo $newsTitles[$i]?></h6>
+                <p class = "inter-light"><?php echo $newsContent[$i]?></p>
+                <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
-
-
-
         <?php } ?>
+    </div>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+        <span class="carousel-dot active"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
     </div>
 </section>
 
