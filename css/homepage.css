@@ -779,7 +779,7 @@
     display: flex;
     justify-content: center;
 }
-
+    
 .camp-text {
     display: flex;
     justify-content:space-between;
@@ -915,6 +915,7 @@
     height: 8.625rem;
     top: 0;
     right: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .square-outer {
@@ -925,6 +926,7 @@
     background: rgba(124, 10, 2, 0.26);
     position: absolute;
     z-index: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 .square-inner {
@@ -938,6 +940,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: absolute;
     z-index: 2;
+    transition: all 0.5s ease-in-out;
 }
 
 .square-icon {
@@ -949,6 +952,7 @@
     align-items: center;
     position: absolute;
     z-index: 3;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -956,7 +960,7 @@
     width: 16rem;
     color: #000;
     font-family: Inter;
-    font-size: 1.71813rem;
+    font-size: 1.51813rem;
     font-style: normal;
     font-weight: 700;
     line-height: 97.435%; /* 1.67406rem */
@@ -964,6 +968,7 @@
     position: relative;
     top: 72%;
     left: 9%;
+    transition: all 0.5s ease-in-out;
 }
 
 .rectangle-text {
@@ -1035,6 +1040,47 @@
     left: 5%;
     transform: translateY(-50%);
 }
+
+.services-squares:hover .square-raindrop,
+    .services-squares:hover .square-outer {
+        width: 17rem;
+        height: 17rem;
+        border-radius: 2.36406rem 0rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .services-squares:hover .square-inner {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 2.36406rem 0rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .services-squares:hover .square-icon {
+        width: 6rem;
+        height: 6rem;
+        top: 27%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .services-squares:hover .square-icon img{
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .services-squares:hover .square-text {
+        width: 11.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.00005rem;
+        color: #FFF;
+        z-index: 3;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 .follow-cont {
     display: flex;
@@ -1401,6 +1447,7 @@
         margin: 0;
         padding: 20px;
         gap: 20px;
+        height: 500px;
     }
 
     .news-grid::-webkit-scrollbar {
@@ -1437,8 +1484,7 @@
     /* Text Container */
     .news-item-content {
         position: absolute;
-        bottom: -100%;
-        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.8), transparent);
         left: 0;
         right: 0;;
         padding: 20px;
@@ -1454,6 +1500,7 @@
         font-size: 1.2rem;
         margin-bottom: 10px;
         padding: 0;
+        color: #BD0F03;
     }
 
     .news-item p {
@@ -1461,6 +1508,7 @@
         font-size: 0.9rem;
         margin-bottom: 10px;
         padding: 0;
+        color: #BD0F03;
     }
     
     .read-more {
@@ -1941,22 +1989,25 @@
 @media screen and (max-width: 375px) {
     .services-cont {
         width: 100%;
-        padding: 10px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        background: white;
     }
 
     .square-cont {
         width: 100%;
-        height: 140px;
-        border-radius: 15px;
-    }
-
-    .square-text {
-        font-size: 0.9rem;
-        bottom: 25px;
-        left: 15px;
+        height: 150px;
+        background: #EEE;
+        border-radius: 30px 0;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 20px;
     }
 
     .main-page-titles-cont {
@@ -2010,13 +2061,15 @@
     }
 
     .square-text {
-        font-size: 1rem;
-        bottom: 25px;
-        left: 20px;
-    }
-
-    .main-page-titles-cont {
-        font-size: 2.5rem;
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        position: static;
+        left: 0;
+        width: 80%;
     }
 }
 

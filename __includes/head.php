@@ -17,6 +17,7 @@
         <?php require_once '../css/ResExt.css'; ?>
         <?php require_once '../css/ResExtHomePage.css'; ?>
         <?php require_once '../css/ResExtResearchUnits.css'; ?>
+        <?php require_once '../css/ESUCampuses.css'; ?>
 
     </style>
 
