@@ -139,7 +139,7 @@
     margin-bottom: 3rem;
 }
 
-.main-page-titles {
+.main-page-titles-cont {
     flex-shrink: 0;
     color: #7C0A02;
     font-family: Inter;
@@ -153,7 +153,7 @@
     padding: 2rem;
 }
 
-.wmsu-news {
+.news-cont {
     padding: 1rem;
     justify-content: center;
     text-align: center;
@@ -278,7 +278,7 @@
     font-weight: bold;
 }
 
-.research-archives {
+.research-cont {
     padding: 40px 80px;
     margin: 0 auto;
     max-width: 1800px;
@@ -344,7 +344,7 @@
 .learn-more-top:hover .learn-more-plus {
     transform: rotate(45deg);
 }
-.research-header {
+.research-header-cont {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -368,7 +368,7 @@
     padding-right: 40px;
 }
 
-.article-title {
+.res-title {
     color: #8B0000;
     font-size: 2.5rem;
     font-weight: 700;
@@ -610,7 +610,7 @@
     left: 0;
 }
 
-.presidents-corner {
+.presidents-corner-cont {
     padding: 0;
     background: #fff;
     display: flex;
@@ -879,7 +879,7 @@
     margin-left: 2rem;
 }
 
-.services-squares {
+.services-logo-cont {
     width: 17rem;
     height: 17rem;
     flex-shrink: 0;
@@ -888,7 +888,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.services-rectangle {
+.services-rectangle-cont {
     width: 7.75rem;
     height:  17rem;
     flex-shrink: 0;
@@ -953,7 +953,7 @@
 
 
 .square-text {
-    width: 14rem;
+    width: 16rem;
     color: #000;
     font-family: Inter;
     font-size: 1.71813rem;
@@ -1341,7 +1341,7 @@
 }
 @media screen and (max-width: 768px) {
     /* News Section Container */
-    .wmsu-news {
+    .news-cont {
         padding: 20px 0;
         position: relative;
         overflow: hidden;
@@ -1484,7 +1484,7 @@
     }
 
     /* Carousel Indicators */
-    .carousel-indicators {
+    .carousel-cont {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -1507,7 +1507,7 @@
    
 
 @media screen and (max-width: 768px) {
-    .research-archives {
+    .research-cont {
         padding: 0;
         margin: 0;
         width: 100%;
@@ -1538,7 +1538,6 @@
     }
 
     .research-title::before {
-        content: '';
         width: 2px;
         height: 80px;
         background-color: #7C0A02;
@@ -1582,7 +1581,7 @@
         order: 2;
     }
 
-     .article-title {
+     .res-title {
         color: white;
         font-family: 'Inter', sans-serif;
         font-size: 1.5rem;
@@ -1593,7 +1592,7 @@
         text-align: center;
     }
 
-    .article-meta {
+    .research_footer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1613,13 +1612,6 @@
         display: inline-block;
         border: none;
         font-family: 'Inter', sans-serif;
-        margin: 0 auto;
-    }
-
-    .line-page-div {
-        width: 2px;
-        height: 130px;
-        background-color: #7C0A02;
         margin: 0 auto;
     }
 
@@ -1655,7 +1647,6 @@
     }
 
     .about-page-title h1::before {
-        content: '';
         width: 2px;
         height: 80px;
         background-color: #7C0A02;
@@ -1729,7 +1720,7 @@
 /*President's Corner MV */
 @media screen and (max-width: 768px) {
     /* President's Corner Container */
-    .presidents-corner {
+    .presidents-corner-cont {
         width: 100%;
         min-height: 1000px;
         padding: 0;
@@ -1854,7 +1845,7 @@
         background: white;
     }
 
-    .main-page-titles {
+    .main-page-titles-cont {
         color: #7C0A02;
         font-size: 2.5rem;
         font-weight: 800;
@@ -1864,8 +1855,7 @@
         position: relative;
     }
 
-    .main-page-titles::before {
-        content: '';
+    .main-page-titles-cont::before {
         position: absolute;
         top: -80px;
         left: 50%;
@@ -1947,126 +1937,194 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* Services Container */
+/* Small Mobile (up to 375px) */
+@media screen and (max-width: 375px) {
+    .services-cont {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .square-cont {
+        width: 100%;
+        height: 140px;
+        border-radius: 15px;
+    }
+
+    .square-text {
+        font-size: 0.9rem;
+        bottom: 25px;
+        left: 15px;
+    }
+
+    .main-page-titles-cont {
+        font-size: 2rem;
+    }
+}
+
+/* Medium Mobile (376px - 576px) */
+@media screen and (min-width: 376px) and (max-width: 576px) {
+    .services-cont {
+        width: 100%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .square-cont {
+        width: 100%;
+        height: 160px;
+        border-radius: 20px;
+    }
+
+    .square-text {
+        font-size: 1rem;
+        bottom: 25px;
+        left: 15px;
+    }
+
+    .main-page-titles-cont {
+        font-size: 2.3rem;
+    }
+}
+
+/* Large Mobile (577px - 700px) */
+@media screen and (min-width: 577px) and (max-width: 760px) {
+    .services-cont {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .square-cont {
+        width: 100%;
+        height: 180px;
+        border-radius: 25px;
+    }
+
+    .square-text {
+        font-size: 1rem;
+        bottom: 25px;
+        left: 20px;
+    }
+
+    .main-page-titles-cont {
+        font-size: 2.5rem;
+    }
+}
+
+/* Shared styles across all mobile sizes */
+@media screen and (max-width: 700px) {
+    .services-title-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        margin: 20px 0;
+        box-sizing: border-box;
+    }
+
+    /* Red Line Before Title */
+    .services-title-card::before {
+        width: 2px;
+        height: 80px; /* Increased height */
+        background-color: #7C0A02;
+        margin-bottom: 30px; /* Increased margin */
+    }
+
+    /* Title Container */
+    .services-title {
+        width: 160px;
+        height: 160px; /* Made square like service boxes */
+        background: #EEE;
+        border-radius: 20px;
+        padding: 15px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    /* Title Text */
+    .services-title h2 {
+        color: #7C0A02;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1.2;
+        position: absolute;
+        bottom: 25px; /* Position from bottom */
+        left: 15px;
+        width: calc(100% - 30px);
+        text-align: left;
+    }
+
+    /* Red Line After Title */
+    .services-title-card::after {
+        content: '';
+        width: 2px;
+        height: 80px; /* Increased height */
+        background-color: #7C0A02;
+        margin-top: 30px; /* Increased margin */
+    }
+
+    /* Services container */
     .services-cont {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
-        padding: 20px;
-        background: white;
+        gap: 15px;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
-    /* Service Square Container */
+    /* Individual service box */
     .square-cont {
-        width: 100%;
-        height: 150px;
-        background: #EEE;
-        border-radius: 30px 0;
-        padding: 20px;
+        width: 160px;
+        background-color: #EEE;
+        border-radius: 20px;
         position: relative;
-        display: flex;
+        margin: 0;
+        box-sizing: border-box;
+        display:inline-block;
         flex-direction: column;
-        justify-content: flex-end;
-        margin-bottom: 20px;
+        justify-content: flex-end; /* Pushes content to bottom */
     }
 
-    .square-cont:not(:last-child)::after {
-        content: '';
-        width: 2px;
-        height: 40px;
-        background-color: #7C0A02;
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
+    /* Service text */
+    .square-text {
+        font-size: 1rem;
+        font-weight: 600;
+        left: 15px;
+        display: inline-block;
+        bottom: 25px; /* Increased distance from bottom */
+        line-height: 1.2;
+        padding-right: 15px;
+        box-sizing: border-box;
     }
 
-    .square-cont:last-child {
-        margin-bottom: 40px;
-    }
-
-    .square-cont:last-child::after {
-        display: none;
-    }
-
+    /* Icon container */
     .square-raindrop {
         position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 80px;
-        height: 80px;
-    }
-    .square-outer {
-        width: 80px;
-        height: 80px;
-        border-radius: 30px 0 30px 30px;
-        background: rgba(124, 10, 2, 0.15);
-        position: absolute;
-    }
-
-    .square-inner {
-        width: 65px;
-        height: 65px;
-        border-radius: 25px 0 25px 25px;
-        background: #7C0A02;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    /* Service Icon */
-    .square-icon {
-        width: 20px;
-        height: 10px;
-        position: absolute;
-        top: 20%;
-        left: 52%;
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        filter: brightness(0) invert(1);
-    }
-
-    /* Service Text */
-    .square-text {
-        color: #000;
-        font-size: 1.25rem;
-        font-weight: 600;
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        position: static;
-        left: 0;
-        width: 80%;
-    }
-
-    .services-rectangle {
-        display: none;
-    }
-
-    .services-bottom {
-        width: 100%;
-        height: 80px;
-        background: #7C0A02;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .services-bottom-text {
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 800;
-        text-transform: uppercase;
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        z-index: 2;
     }
 }
 
+
 /* Add More Services Section */
 @media screen and (max-width: 768px) {
-    .services-rectangle {
+    .services-rectangle-cont {
         width: 100%;
         height: 100px;
         background: #7C0A02;
@@ -2130,7 +2188,7 @@
 
     @media screen and (max-width: 768px) {
         /* Main container */
-        .follow-wmsu {
+        .follow-wmsu-cont {
             width: 100%;
             position: relative;
             padding: 0;
@@ -2138,7 +2196,7 @@
         }
     
         /* Title styling */
-        .main-page-titles {
+        .main-page-titles-cont {
             color: #7C0A02;
             font-size: 2.5rem;
             font-weight: 800;
@@ -2147,8 +2205,7 @@
             margin: 0;
             position: relative;
         }
-        .main-page-titles::before {
-            content: '';
+        .main-page-titles-cont::before {
             position: absolute;
             top: -80px;
             left: 50%;

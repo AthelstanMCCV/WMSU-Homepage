@@ -110,62 +110,49 @@ foreach($servicesItems as $items){
     <div class="news-header-container">
         <h2 class="news-title">WMSU NEWS</h2>
         <div class="more">
-            <h6 class="inter-extrabold" id="more-article">MORE ARTICLES</h6>
+            <h6 class="inter-extrabold text-wmsu-red hover:text-wmsu-dark-red transition-colors duration-300" id="more-article">MORE ARTICLES</h6>
         </div>
     </div>
     <div class="news-grid">
         <?php 
-        
-         for($i = 0; $i < count($newsTitles); $i++){
+        for($i = 0; $i < count($newsTitles); $i++){
         ?>
             <div class="news-item">
-            <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
-            <h6 class = "inter-medium"><?php echo $newsTitles[$i]?></h6>
-            <p class = "inter-light"><?php echo $newsContent[$i]?></p>
-            <a href="#" class="read-more">Read More ></a>
-        </div>
-
-
-
+                <img src="<?php echo $newsImgs[$i]['imagePath']?>" alt="<?php echo $newsImgs[$i]['alt']?>">
+                <h6 class="inter-medium text-lg md:text-base sm:text-sm"><?php echo $newsTitles[$i]?></h6>
+                <p class="inter-light text-gray-600 md:text-sm sm:text-xs"><?php echo $newsContent[$i]?></p>
+                <a href="#" class="read-more text-wmsu-red hover:text-wmsu-dark-red transition-colors duration-300">Read More ></a>
+            </div>
         <?php } ?>
     </div>
 </section>
 
-
 <section class="line-page-div"></section>
 
 <section class="research-archives">
-    <a href="#" class="learn-more-top">
-        <span class="learn-more-text inter-extrabold">LEARN MORE</span>
-        <span class="learn-more-plus inter-extrabold">+</span>
+    <a href="#" class="learn-more-top absolute top-8 right-8 md:top-4 md:right-4 sm:top-2 sm:right-2 flex items-center gap-2">
+        <span class="learn-more-text inter-extrabold text-wmsu-red hover:text-wmsu-dark-red transition-colors duration-300">LEARN MORE</span>
+        <span class="learn-more-plus inter-extrabold text-wmsu-red">+</span>
     </a>
-    <div class="research-header">
+    <div class="research-header text-center mb-8">
         <h2 class="research-title">RESEARCH ARCHIVES</h2>
     </div>
     
     <div class="research-content">
-
-    <?php for ($i = 0; $i < count($researchTitles); $i++){
-            
-            ?>
+        <?php for ($i = 0; $i < count($researchTitles); $i++){ ?>
         <div class="research-text">
-
-            <h3 class="article-title"><?php echo $researchTitles[$i]?></h3>
-            
-            <p class="researcher"><?php echo $researchAuthors[$i]?></p>
-            
-            <p class="description"><?php echo $researchDesc[$i]?></p>
-            
-            <div class="article-meta">
-                <span class="publish-date"><?php echo $researchPubDate[$i]?></span>
-                <a href="#" class="read-more">Read More ></a>
+            <h3 class="article-title text-2xl md:text-xl sm:text-lg font-bold text-wmsu-red"><?php echo $researchTitles[$i]?></h3>
+            <p class="researcher text-gray-600 md:text-sm sm:text-xs"><?php echo $researchAuthors[$i]?></p>
+            <p class="description text-gray-700 md:text-sm sm:text-xs"><?php echo $researchDesc[$i]?></p>
+            <div class="article-meta flex flex-col gap-2 mt-4">
+                <span class="publish-date text-gray-500 md:text-sm sm:text-xs"><?php echo $researchPubDate[$i]?></span>
+                <a href="#" class="read-more text-wmsu-red hover:text-wmsu-dark-red transition-colors duration-300">Read More ></a>
             </div>
         </div>
-
-    <?php } ?>
+        <?php } ?>
         
         <div class="research-image">
-            <img src="../imgs/research.png" alt="Research Image">
+            <img src="../imgs/research.png" alt="Research Image" class="w-full h-auto rounded-lg shadow-md">
         </div>
     </div>
 </section>
@@ -173,23 +160,23 @@ foreach($servicesItems as $items){
 <section class="line-page-div"></section>
 
 <div class="about-page-title">
-    <h1>ABOUT WMSU</h1>
-    <a href="#" class="about-learn-more">
-        <span class="about-learn-more-text inter-extrabold">Learn more</span>
-        <span class="about-learn-more-plus inter-semibold">+</span>
+    <h1 class="text-4xl md:text-3xl sm:text-2xl font-bold text-wmsu-red text-center">ABOUT WMSU</h1>
+    <a href="#" class="about-learn-more absolute top-8 right-8 md:top-4 md:right-4 sm:top-2 sm:right-2 flex items-center gap-2">
+        <span class="about-learn-more-text inter-extrabold text-wmsu-red hover:text-wmsu-dark-red transition-colors duration-300">Learn more</span>
+        <span class="about-learn-more-plus inter-semibold text-wmsu-red">+</span>
     </a>
 </div>
-       <section class="about-section">
+
+<section class="about-section">
     <div class="about-container">
         <div class="vertical-divider"></div>
         <div class="about-content">
-            <p class="about-description inter-extralight">
-                <?php echo $aboutUsDesc?>.
+            <p class="about-description inter-extralight text-white md:text-sm sm:text-xs">
+                <?php echo $aboutUsDesc?>
             </p>
-            <div class="about-links">
-
-            <?php foreach ($aboutUsLinks as $items){?>
-                <a href="<?php echo $items['link']?>" class="about-link inter-semibold">
+            <div class="about-links flex flex-col gap-4 md:gap-2 sm:gap-1">
+                <?php foreach ($aboutUsLinks as $items){?>
+                <a href="<?php echo $items['link']?>" class="about-link inter-semibold text-white hover:text-gray-200 transition-colors duration-300">
                     <span><?php echo $items['content']?></span>
                     <span class="arrow">></span>
                 </a>
@@ -204,49 +191,46 @@ foreach($servicesItems as $items){
 <section class="presidents-corner">
     <div class="corner-container">
         <div class="corner-image">
-            <img src="../imgs/OCHO.png" alt="WMSU President" class="img-fluid">
+            <img src="../imgs/OCHO.png" alt="WMSU President">
         </div>
         <div class="corner-content">
-            <h2 class="section-title">PRESIDENT'S CORNER</h2>
+            <h2 class="section-title text-4xl md:text-3xl sm:text-2xl font-bold text-wmsu-red mb-8">PRESIDENT'S CORNER</h2>
             
-            <div class="report-links">
-            
-            <?php for ($i = 0; $i < count($reportTitles); $i++) {?>
-                <a href="#" class="report-item">
+            <div class="report-links flex flex-col gap-4 md:gap-2 sm:gap-1">
+                <?php for ($i = 0; $i < count($reportTitles); $i++) {?>
+                <a href="#" class="report-item p-4 hover:bg-gray-50 transition-colors duration-300">
                     <div class="report-info">
-                        <h3 class ="inter-bold"><?php echo $reportTitles[$i]?></h3>
-                        <span class="report-date"><?php echo $reportDates[$i]?></span>
+                        <h3 class="inter-bold text-lg md:text-base sm:text-sm"><?php echo $reportTitles[$i]?></h3>
+                        <span class="report-date text-gray-500 md:text-sm sm:text-xs"><?php echo $reportDates[$i]?></span>
                     </div>
                 </a>
-
-            <?php } ?>
+                <?php } ?>
             </div>
         </div>
     </div>
 </section>
 
 <section class="line-page-div"></section>
-</section>
 
 <section class="wmsu-campuses">
-    <div class="main-page-titles">WMSU CAMPUSES</div>
-    <div class="camp-cont"> 
-        <div class="camp-cont-left"> 
-            <div class="camp-text"> 
-                <div class="camp-text-title">ZAMBOANGA DEL SUR</div>
-                <div class="camp-text-mix">
-                    <div class="camp-text-plus">+</div>
-                    <div class="camp-text-show">SHOW MORE</div>
+    <div class="main-page-titles text-4xl md:text-3xl sm:text-2xl font-bold text-wmsu-red text-center mb-8">WMSU CAMPUSES</div>
+    <div class="camp-cont">
+        <div class="camp-cont-left bg-cover bg-center relative">
+            <div class="camp-text absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+                <div class="camp-text-title text-white md:text-3xl sm:text-2xl">ZAMBOANGA DEL SUR</div>
+                <div class="camp-text-mix flex items-center gap-2 mt-4">
+                    <div class="camp-text-plus text-white text-2xl md:text-xl sm:text-lg">+</div>
+                    <div class="camp-text-show text-white md:text-sm sm:text-xs">SHOW MORE</div>
                 </div>
             </div>
         </div>
         <div class="camp-cont-mid"></div>
-        <div class="camp-cont-right"> 
-            <div class="camp-text"> 
-                <div class="camp-text-title">ZAMBOANGA SIBUGAY</div>
-                <div class="camp-text-mix">
-                <div class="camp-text-plus">+</div>
-                <div class="camp-text-show">SHOW MORE</div>
+        <div class="camp-cont-right bg-cover bg-center relative">
+            <div class="camp-text absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+                <div class="camp-text-title text-white md:text-3xl sm:text-2xl">ZAMBOANGA SIBUGAY</div>
+                <div class="camp-text-mix flex items-center gap-2 mt-4">
+                    <div class="camp-text-plus text-white text-2xl md:text-xl sm:text-lg">+</div>
+                    <div class="camp-text-show text-white md:text-sm sm:text-xs">SHOW MORE</div>
                 </div>
             </div>
         </div>

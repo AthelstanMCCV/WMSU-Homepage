@@ -17,8 +17,8 @@
 
 <section class="line-after-hero"></section>
 
-<section class="wmsu-news">
-    <div class="news-header-container">
+<section class="news-cont">
+    <div class="news-header-cont">
         <h2 class="news-title">WMSU NEWS</h2>
         <div class="more">
             <h6 class="inter-extrabold" id="more-article">MORE ARTICLES</h6>
@@ -33,6 +33,7 @@
                 <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
+
         <div class="news-item">
             <img src="../imgs/news2.png" alt="Smart Research Hub">
             <div class="news-item-content">
@@ -41,6 +42,7 @@
                 <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
+
         <div class="news-item">
             <img src="../imgs/news3.png" alt="Global-Partnerships">
             <div class="news-item-content">
@@ -49,6 +51,7 @@
                 <a href="#" class="read-more">Read More ></a>
             </div>
         </div>
+
         <div class="news-item">
             <img src="../imgs/news4.png" alt="Science Fair">
             <div class="news-item-content">
@@ -60,7 +63,7 @@
     </div>
 
     <!-- Carousel Indicators -->
-    <div class="carousel-indicators">
+    <div class="carousel-cont">
         <span class="carousel-dot active"></span>
         <span class="carousel-dot"></span>
         <span class="carousel-dot"></span>
@@ -71,12 +74,13 @@
 
 <section class="line-page-div"></section>
 
-<section class="research-archives">
+<section class="research-cont">
     <a href="#" class="learn-more-top">
         <span class="learn-more-text inter-extrabold">LEARN MORE</span>
         <span class="learn-more-plus inter-extrabold">+</span>
     </a>
-    <div class="research-header">
+
+    <div class="research-header-cont">
         <h2 class="research-title">RESEARCH ARCHIVES</h2>
     </div>
     
@@ -88,10 +92,11 @@
             
             <p class="description">As artificial intelligence (AI) continues to reshape various industries, its role in education has become increasingly significant. This study explores the implementation of AI-powered Smart Tutoring Systems (STS) to enhance student learning experiences. By leveraging machine learning algorithms, natural language processing, and adaptive learning models, these systems provide personalized guidance tailored to each student's learning pace and comprehension level.</p>
             
-            <div class="article-meta">
+            <div class="research-footer">
                 <span class="publish-date">Published: December 2023</span>
-                <a href="#" class="read-more">Read More ></a>
             </div>
+
+            <div class="read-more">Read More ></div>           
         </div>
         
         <div class="research-image">
@@ -109,8 +114,9 @@
         <span class="about-learn-more-plus inter-semibold">+</span>
     </a>
 </div>
-       <section class="about-section">
-    <div class="about-container">
+
+<section class="about-section">
+      <div class="about-container">
         <div class="vertical-divider"></div>
         <div class="about-content">
             <p class="about-description inter-extralight">
@@ -140,7 +146,7 @@
 
 <section class="line-page-div"></section>
 
-<section class="presidents-corner">
+<section class="presidents-corner-cont">
     <div class="corner-container">
         <div class="corner-image">
             <img src="../imgs/OCHO.png" alt="WMSU President" class="img-fluid">
@@ -191,8 +197,8 @@
 <section class="line-page-div"></section>
 </section>
 
-<section class="wmsu-campuses">
-    <div class="main-page-titles">WMSU CAMPUSES</div>
+<section class="wmsu-campuses-cont">
+    <div class="main-page-titles-cont">WMSU CAMPUSES</div>
     <div class="camp-cont"> 
         <div class="camp-cont-left"> 
             <div class="camp-text"> 
@@ -218,10 +224,10 @@
 
 <section class="line-page-div"></section>
 
-<section class="wmsu-services">
-    <div class="main-page-titles">SERVICES</div>
+<section class="wmsu-services-cont">
+    <div class="main-page-titles-cont">SERVICES</div>
     <div class="services-cont">
-        <div class="services-squares">
+        <div class="services-logo-cont">
             <div class="square-cont">
                 <div class="square-raindrop">
                     <div class="square-outer"></div>
@@ -233,7 +239,7 @@
                 <div class="square-text">Freshman Online Pre-Admission</div>
             </div>
         </div>
-        <div class="services-squares">
+        <div class="services-logo-cont">
             <div class="square-cont">
                 <div class="square-raindrop">
                     <div class="square-outer"></div>
@@ -245,7 +251,7 @@
                 <div class="square-text">Online Registration (Old Student)</div>
             </div>
         </div>
-        <div class="services-squares">
+        <div class="services-logo-cont">
             <div class="square-cont">
                 <div class="square-raindrop">
                     <div class="square-outer"></div>
@@ -257,7 +263,7 @@
                 <div class="square-text">Online Advising</div>
             </div>
         </div>
-        <div class="services-squares">
+        <div class="services-logo-cont">
             <div class="square-cont">
                 <div class="square-raindrop">
                     <div class="square-outer"></div>
@@ -269,7 +275,7 @@
                 <div class="square-text">Online Enlistment</div>
             </div>
         </div>
-        <div class="services-rectangle">
+        <div class="services-rectangle-cont">
             <div class="rectangle-text">
                 <div class="rectangle-text-hide">WMSU<br>SERVICES</div>
                 <div class="rectangle-plus">+</div>
@@ -281,8 +287,9 @@
 
 <section class="line-page-div"></section>
 
-<section class="follow-wmsu">
-    <div class="main-page-titles">FOLLOW WMSU</div>
+<section class="follow-wmsu-cont">
+    <div class="main-page-titles-cont">FOLLOW WMSU</div>
+
     <div class="follow-cont">
         <div class="follow-cont-left">
             <div class="follow-left-rect">
@@ -293,9 +300,10 @@
                         <img src="../imgs/facebook-icon.png" alt="" >
                     </div>
                     <div class="left-text-word">FACEBOOK</div>
-                    </div>
                 </div>
             </div>
+        </div>
+
         <div class="follow-cont-right">
             <div class="follow-right-rect">
                 <div class="right-red-overlay"></div>
